@@ -33,7 +33,7 @@ To install **Oracle VirtualBox** on a Windows system and set up a Linux operatin
 
 ### **Step 4-** Creating a new Virtual machine -  Ubuntu 
 - Create a new virtual machine by clicking on the "New" or "Create" button.
-![Creating a new VM](images\115.png) <br><br>
+![Creating a new VM](images/115.png) <br><br>
 
 
 - Follow the on-screen instructions to set up the virtual machine. This includes specifying the name, location, and specifications for the virtual machine, such as the amount of RAM and storage allocated.  
@@ -41,22 +41,22 @@ To install **Oracle VirtualBox** on a Windows system and set up a Linux operatin
 
 
 - A summary will be shown about the VM to be created
-![Summary of vM](images\117.png)<br><br>
+![Summary of vM](images/117.png)<br><br>
 
 
 - Adding `ubuntu-24.04.3-desktop-amd64.iso` file in **Stoage** under the **Controller:IDE** by clicking on the empty optical drive.
 ![Adding .iso file](images/118.png)<br><br>
 
 
-- Completing the virtual machine setup by following the remaining on-screen instructions involving configuring network settings, and specifying storage options,etc.
+- Completing the virtual machine setup by following the remaining on-screen instructions involving configuring network settings, specifying storage options, etc.
 ![Configuring](images/119.png)<br><br>
 
 
-- Installing and setting up the `Ubuntu 24.04` by following th einstalltion prompts and providing the required information such as username, password.
+- Installing and setting up the `Ubuntu 24.04` by following the installation prompts and providing the required information, such as username and password.
 ![Setting up Ubuntu](images/120.png)<br><br>
 
 
-- After the installation is complete we will have a fully functional **Linux Virtual Machine** running with **VirtualBox**.
+- After the installation is complete, we will have a fully functional **Linux Virtual Machine** running with **VirtualBox**.
 ![Linux VM](images/121.png)
 
 ---

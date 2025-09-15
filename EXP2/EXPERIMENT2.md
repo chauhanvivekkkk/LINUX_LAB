@@ -454,5 +454,9 @@ chmod 754 myfile2.txt
 
  - System information and resource usage were monitored during the experiment.
 
+-----------------------------------------------------------------------------
+
 ## 🧠 CONCLUSION
  The experiment provided practical experience in using various Linux commands related to file systems, permissions, navigation, file operations, editing, user management, and system monitoring.
+
+------------------------------------------------------------------------------

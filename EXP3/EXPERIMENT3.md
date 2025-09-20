@@ -12,7 +12,7 @@
 - **Shell:** Bash (*Bourne-Again Shell*)
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">File Searching with `find`</h1>
+## <h1 style="background-color: pink;">🔍 File Searching with `find`</h1>
  - The find command is used to search for files and directories based on different criteria like name, type, size, permissions, etc. It searches recursively in directories.<br><br>
 
  ### Syntax 
@@ -88,7 +88,7 @@
    ![output](images/305.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">File Searching with `grep`</h1>
+## <h1 style="background-color: pink;">🔍 File Searching with `grep`</h1>
  - `grep` (*Global Regular Expression Print*) is a command-line utility used to search for text patterns in files or command outputs.
 
  ### Syntax
@@ -150,7 +150,7 @@
   ![output](images/309.png) <br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">Creating files with `tar`</h1>
+## <h1 style="background-color: pink;">🗂️ Creating files with `tar`</h1>
  - The `tar` command is used to create, view and extract archive files.
  
  ### Syntax 
@@ -188,7 +188,7 @@
    ![output](images/311.png) <br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">File Compression and Decompression with `gzip/gunzip`</h1>
+## <h1 style="background-color: pink;">📦 File Compression and Decompression with `gzip/gunzip`</h1>
  ### 1. File Compression with `gzip` 
   The `gzip` command is used to compress files with `.gz` extension.
 
@@ -238,7 +238,7 @@
    ![output](images/313.png) <br><br>
    
 ------------------------------------------------------------------------
-## <h1 style="background-color: pink;">Creatinh links with `ln`</h1>
+## <h1 style="background-color: pink;">🔗 Creating links with `ln`</h1>
  - The `ln` command is used to create inks between the files. <br><br>
 
   ### Syntax

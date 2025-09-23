@@ -1,17 +1,18 @@
-# **EXPERIMENT 1** 
-## *Installation of VirtualBox and Setting up linux OS*
----
+# **EXPERIMENT 1** <h1 style="background-color: orange;">Installation of VirtualBox and Setting up linux OS</h1>
+
+---------------------------------------------------------------------------
 ## 📌 Aim  
 To install **Oracle VirtualBox** on a Windows system and set up a Linux operating system (Ubuntu/Fedora/etc.) to practice Linux commands and explore its environment in a virtual machine.
 
----
+---------------------------------------------------------------------------
 ## 🛠 Tools & Software Used  
 - **Host OS:** Windows 11
 - **Virtualization Software:** Oracle VirtualBox *v7.2.0*
 - **Guest OS:** Ubuntu 24.04.03
 
----
-## 📋 Procedure
+---------------------------------------------------------------------------
+## <h1 style="background-color: orange;">📋 Procedure</h1>
+
 ### **Step 1-** Downloading the Oracle Virtual Box
 - Open [https://www.virtualbox.org/](https://www.virtualbox.org/) 
 - Download the latest version for Windows hosts<br><br>
@@ -59,15 +60,15 @@ To install **Oracle VirtualBox** on a Windows system and set up a Linux operatin
 - After the installation is complete, we will have a fully functional **Linux Virtual Machine** running with **VirtualBox**.<br><br>
 ![Linux VM](images/121.png)
 
----
-## ✅ Observations
+---------------------------------------------------------------------------
+## <h1 style="background-color: orange;"> ✅ Observations</h1>
 
 - Oracle VirtualBox was installed successfully without any issues.
 - The Linux OS booted and installed properly inside the virtual machine.
 - Terminal commands were executed successfully.
 
----
-## 🧠 Conclusion
+---------------------------------------------------------------------------
+## <h1 style="background-color: orange;"> 🧠 Conclusion </h1>
 
 The experiment helped me install and configure Oracle VirtualBox and set up a Linux operating system in a virtual environment.
 

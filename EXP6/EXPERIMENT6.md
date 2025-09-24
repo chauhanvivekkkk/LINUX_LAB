@@ -2,7 +2,7 @@
 
 ---------------------------------------------------------------------------
 ## 📌 Aim
-   **TTo understand and practically apply Shell Loops, Loop Control statements, Input/Output Redirections, Shell Functions, Regular Expressions, and Script Debugging in Linux**
+   **To understand and practically apply Shell Loops, Loop Control statements, Input/Output Redirections, Shell Functions, Regular Expressions, and Script Debugging in Linux**
 
 ---------------------------------------------------------------------------
 ## 🛠 Tools & Software Used 

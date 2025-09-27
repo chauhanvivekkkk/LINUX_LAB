@@ -1,11 +1,11 @@
 # <h1 style="background-color: orange;"> EXPERIMENT 8 - Shell Programming</h1>
 
 ---------------------------------------------------------------------------
-## 📌 Aim
+## Aim
    **To understand and demonstrate the concepts of process control and signals, process monitoring and resource usage, process communication and synchronization, background processes and job control, and system monitoring and logging in Linux**
 
 ---------------------------------------------------------------------------
-## 🛠 Tools & Software Used 
+## Tools & Software Used 
 - **Operating System:** Ubuntu running on Oracle VirtualBox  
 - **Terminal Emulator:** GNOME Terminal 
 - **Shell:** Bash (*Bourne-Again Shell*)
@@ -115,7 +115,7 @@
    ![output10](images/814.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">📋 OBSERVATIONS</h1>
+## <h1 style="background-color: pink;"> OBSERVATIONS</h1>
 
  - `kill`, `wait` and job control commands (`&`, `jobs`, `fg`, `bg`) worked as expected.
 
@@ -128,7 +128,7 @@
  - Lab exercises executed successfully with expected outputs.
  
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🧠 CONCLUSION</h1> 
+## <h1 style="background-color: pink;"> CONCLUSION</h1> 
 
 - The experiment demonstrated process control, monitoring, communication, and synchronization in Linux.
 

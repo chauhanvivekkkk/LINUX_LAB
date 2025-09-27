@@ -1,7 +1,7 @@
 # <h1 style="background-color: orange;"> EXPERIMENT 5 - Shell Programming</h1>
 
 ---------------------------------------------------------------------------
-## 📌 Aim
+##  Aim
    **To learn the Conditional statements, Loops and decision making in Shell scripting.**
 
 ---------------------------------------------------------------------------
@@ -11,7 +11,7 @@
 - **Shell:** Bash (*Bourne-Again Shell*)
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">📝TASK 1: Prime Number Check</h1>
+## <h1 style="background-color: pink;">TASK 1: Prime Number Check</h1>
  #### Write a script that takes a number as input and checks whether it is a prime number or not.<br><br>
 
 
@@ -22,7 +22,7 @@
    ![output](images/502.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">📝TASK 2: Sum of Digits</h1>
+## <h1 style="background-color: pink;">TASK 2: Sum of Digits</h1>
   #### Write a script that calculates the sum of the digits of a given number. <br><br>
 
 
@@ -33,7 +33,7 @@
    ![output](images/504.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">📝TASK 3: Armstrong Number</h1>
+## <h1 style="background-color: pink;">TASK 3: Armstrong Number</h1>
   #### Create a script that checks whether a given number is an Armstrong numberor not.<br><br>
 
 
@@ -44,7 +44,7 @@
    ![output](images/506.png)<br><br>
 
 ---------------------------------------------------------------------------
-<h1 style="background-color: pink;">📋 OBSERVATIONS</h1>
+<h1 style="background-color: pink;"> OBSERVATIONS</h1>
 
  - The prime number script correctly identified whether the input number was prime or not.
 
@@ -58,7 +58,7 @@
 
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🧠 CONCLUSION</h1> 
+## <h1 style="background-color: pink;"> CONCLUSION</h1> 
 
  - Conditional statements and loops were effectively used in all scripts.
 

@@ -1,17 +1,17 @@
 # <h1 style="background-color: orange;"> EXPERIMENT 6 - Shell Programming</h1>
 
 ---------------------------------------------------------------------------
-## 📌 Aim
+## Aim
    **To understand and practically apply Shell Loops, Loop Control statements, Input/Output Redirections, Shell Functions, Regular Expressions, and Script Debugging in Linux**
 
 ---------------------------------------------------------------------------
-## 🛠 Tools & Software Used 
+## Tools & Software Used 
 - **Operating System:** Ubuntu running on Oracle VirtualBox  
 - **Terminal Emulator:** GNOME Terminal 
 - **Shell:** Bash (*Bourne-Again Shell*)
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🔄Loops</h1>
+## <h1 style="background-color: pink;">Loops</h1>
  
   ### 1.`for` loop:
    #### Script:
@@ -35,7 +35,7 @@
    ![output3](images/606.png)<br><br>
 
 ---------------------------------------------------------------------------   
-## <h1 style="background-color: pink;">🔄Loop Control using `continue` & `break`</h1>
+## <h1 style="background-color: pink;">Loop Control using `continue` & `break`</h1>
 
  ### Using `continue` and `break`:
    #### Script:
@@ -45,7 +45,7 @@
    ![output4](images/608.png)<br><br> 
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">⚙️Shell Functions</h1>
+## <h1 style="background-color: pink;">Shell Functions</h1>
 
  ### 1. Greeting function:
    #### Script:
@@ -62,7 +62,7 @@
    ![output6](images/612.png)<br><br> 
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🧩Lab Exercises</h1>
+## <h1 style="background-color: pink;">Lab Exercises</h1>
 
  ### TASK 1: Palindrome Check
    #### Script:
@@ -86,13 +86,13 @@
    ![output8](images/618.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">📋 OBSERVATIONS</h1>
+## <h1 style="background-color: pink;"> OBSERVATIONS</h1>
 - Loops and loop control statements executed correctly.
 - Shell functions allowed reusable code blocks.
 
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🧠 CONCLUSION</h1> 
+## <h1 style="background-color: pink;"> CONCLUSION</h1> 
  Learned to use loops, functions, IO redirection, and regex in Bash scripts
 
 

@@ -11,10 +11,10 @@ This repository will contain all my Linux lab experiments and scripts for learni
 ## 🔗<h1 style="background-color: orange;"> LINKS TO EXPERIMENTS</h1>
 
  - **EXPERIMENT 1: Installation of VirtualBox** 
-  [EXPERIMENT1](EXP1/EXPERIMENT1.md) <br><br>
+  [EXPERIMENT1](EXP1/EXPEERIMENT1.md) <br><br>
 
  - **EXPERIMENT 2: Linux File Systems, Permissions and Commands** 
-  [EXPERIMENT2](LINUX_LAB/EXP2/EXPERIMENT2.md)  <br><br>
+  [EXPERIMENT2](EXP2/EXPERIMENT2.md)  <br><br>
 
   - **EXPERIMENT 3: Advanced File and Directory Operations** 
   [EXPERIMENT3](LINUX_LAB/EXP3/EXPERIMENT3.md)  <br><br>

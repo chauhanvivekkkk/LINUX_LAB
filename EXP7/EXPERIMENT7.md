@@ -1,17 +1,17 @@
 # <h1 style="background-color: orange;"> EXPERIMENT 7 - Shell Programming</h1>
 
 ---------------------------------------------------------------------------
-## 📌 Aim
+##  Aim
    **To understand and practically apply process management commands, viewing and monitoring processes, terminating, process priortization and scheduling**
 
 ---------------------------------------------------------------------------
-## 🛠 Tools & Software Used 
+## Tools & Software Used 
 - **Operating System:** Ubuntu running on Oracle VirtualBox  
 - **Terminal Emulator:** GNOME Terminal 
 - **Shell:** Bash (*Bourne-Again Shell*)
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🖥️Basic Process Commands</h1>
+## <h1 style="background-color: pink;">Basic Process Commands</h1>
  #### 1. `   ps   ` - shows currently running proccesses 
   ![output1](images/701.png) <br><br><br><br>
 
@@ -25,7 +25,7 @@
   ![output4](images/704.png) <br><br><br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">⚖️Process Priotization</h1>
+## <h1 style="background-color: pink;">Process Priotization</h1>
 
  #### 1. `    nice -n <value> command    ` - starts a process with a specific priority
    ![output5](images/705.png) <br><br><br><br>
@@ -34,7 +34,7 @@
    ![output6](images/706.png) <br><br><br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🕒Process Scheduling</h1> 
+## <h1 style="background-color: pink;">Process Scheduling</h1> 
 
  #### 1. `    at <TIME>   ` - schedules one time tasks (*works only with mins, hours & days*)
    ![output7](images/707.png) <br><br>
@@ -56,7 +56,7 @@
    ![output8.2](images/708.2.png) <br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🧩LAB Exericeses</h1>
+## <h1 style="background-color: pink;">LAB Exericeses</h1>
 
  ### <h1 style="background-color: lightgreen;">TASK 1: File existence Check</h1>
    #### Script:
@@ -87,7 +87,7 @@
    ![output12](images/716.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">📋 OBSERVATIONS</h1>
+## <h1 style="background-color: pink;">OBSERVATIONS</h1>
 
  - Successfully viewed running processes using ps, top, and pstree.
 
@@ -97,7 +97,7 @@
 
  
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🧠 CONCLUSION</h1> 
+## <h1 style="background-color: pink;">CONCLUSION</h1> 
 The experiment enhanced understanding of Linux process management and scheduling.
 
 

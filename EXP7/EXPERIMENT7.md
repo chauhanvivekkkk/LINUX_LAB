@@ -11,7 +11,7 @@
 - **Shell:** Bash (*Bourne-Again Shell*)
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">Basic Process Commands</h1>
+## <h1 style="background-color: pink;">🖥️Basic Process Commands</h1>
  #### 1. `   ps   ` - shows currently running proccesses 
   ![output1](images/701.png) <br><br><br><br>
 
@@ -25,7 +25,7 @@
   ![output4](images/704.png) <br><br><br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">Process Priotization</h1>
+## <h1 style="background-color: pink;">⚖️Process Priotization</h1>
 
  #### 1. `    nice -n <value> command    ` - starts a process with a specific priority
    ![output5](images/705.png) <br><br><br><br>
@@ -34,7 +34,7 @@
    ![output6](images/706.png) <br><br><br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">Process Scheduling</h1> 
+## <h1 style="background-color: pink;">🕒Process Scheduling</h1> 
 
  #### 1. `    at <TIME>   ` - schedules one time tasks (*works only with mins, hours & days*)
    ![output7](images/707.png) <br><br>

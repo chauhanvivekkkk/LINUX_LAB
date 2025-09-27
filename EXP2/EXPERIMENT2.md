@@ -1,17 +1,17 @@
 # <h1 style="background-color: orange;">EXPERIMENT 2 - Linux File systems, Permissions & Commands</h1>
 
 --------------------------------------------------------------------------
-## 📌 Aim
+##  Aim
 To understand the structure of the Linux file system, manage file permissions and ownership, and practice essential Linux commands.
 
 ---------------------------------------------------------------------------
-## 🛠 Tools & Software Used 
+## Tools & Software Used 
 - **Operating System:** Ubuntu running on Oracle VirtualBox  
 - **Terminal Emulator:** GNOME Terminal 
 - **Shell:** Bash (*Bourne-Again Shell*)
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">📂 Linux File Systems </h1>
+## <h1 style="background-color: pink;">Linux File Systems </h1>
 - The Linux file system is a structured and hierarchical way of storing and organizing files and directories.
 - Linux treats everything as part of a single directory tree starting from the root directory `/`
 - To view all files and directories in the root `/` directory along with their details such as *permissions*, *ownership*, etc.
@@ -23,7 +23,7 @@ ls -l /
   ![output](images/201.png) <br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🔑File Permissions and Ownership</h1>
+## <h1 style="background-color: pink;">File Permissions and Ownership</h1>
 
 - Every file and directory in Linux has three types of permissions:
   - `r` *read*
@@ -42,7 +42,7 @@ ls -l /
 
 ---------------------------------------------------------------------------
 
-## <h1 style="background-color: pink;"> ⚙️Modifying Permissions</h1>
+## <h1 style="background-color: pink;"> Modifying Permissions</h1>
   ### Using `chmod` command
 - To change the permission and making `myfile.txt` executable for the user we can use the command
 ```
@@ -60,7 +60,7 @@ chmod 754 myfile2.txt
 
 ---------------------------------------------------------------------------
 
-## <h1 style="background-color: pink;">📍Basic Navigation Commands</h1>
+## <h1 style="background-color: pink;">Basic Navigation Commands</h1>
 
 ### 1. `ls` - List Directory content
 - `ls` - *List files in current directory*
@@ -231,7 +231,7 @@ chmod 754 myfile2.txt
   ![output](images/216.png) <br><br>
 
 ---------------------------------------------------------------------------
-##  <h1 style="background-color: pink;"> 👀File viewing and Editing</h1>
+##  <h1 style="background-color: pink;">File viewing and Editing</h1>
 
  ### 1. `cat` - Used for viewing, creating and merging files
   - The `cat` command is use to display the content of files, create new fiels or combine multiple files.
@@ -309,7 +309,7 @@ chmod 754 myfile2.txt
   ![output](images/221.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;"> ✍️ Text editors</h1>
+## <h1 style="background-color: pink;"> Text editors</h1>
  ### 1. Nano
   - NANO is a text editor that works directly from the terminal, ysefult o create and edit files.
   
@@ -327,7 +327,7 @@ chmod 754 myfile2.txt
 
 ---------------------------------------------------------------------------
 
-## <h1 style="background-color: pink;"> 👤User Management</h1>
+## <h1 style="background-color: pink;"> User Management</h1>
  ### 1. `whoami` - Display the current username 
 
  ### 2. `who` - Display all users currently logged into the system
@@ -348,7 +348,7 @@ chmod 754 myfile2.txt
 
 ---------------------------------------------------------------------------
   
- ## <h1 style="background-color: pink;"> 🖥️System Information</h1>
+ ## <h1 style="background-color: pink;"> System Information</h1>
   ### 1.`uname` - To display detais about linux system
 
    #### Syntax
@@ -423,7 +423,7 @@ chmod 754 myfile2.txt
    ![output](images/231.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🧩EXERCISES</h1>
+## <h1 style="background-color: pink;">EXERCISES</h1>
  ### Exercise 1 - File system navigation<br><br>
   ![output](images/232.png)<br><br>
 
@@ -444,7 +444,7 @@ chmod 754 myfile2.txt
  ![output](images/236.png)<br><br>
 
 ---------------------------------------------------------------------------
-##  <h1 style="background-color: orange;"> 📋 OBERVATIONS</h1>
+##  <h1 style="background-color: orange;"> OBERVATIONS</h1>
  
  - The Linux file system structure was explored using commands.
 
@@ -460,7 +460,7 @@ chmod 754 myfile2.txt
 
 -----------------------------------------------------------------------------
 
-##  <h1 style="background-color: orange;"> 🧠 CONCLUSION</h1>
+##  <h1 style="background-color: orange;"> CONCLUSION</h1>
  The experiment provided practical experience in using various Linux commands related to file systems, permissions, navigation, file operations, editing, user management, and system monitoring.
 
 ------------------------------------------------------------------------------

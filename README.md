@@ -17,22 +17,22 @@ This repository will contain all my Linux lab experiments and scripts for learni
   [EXPERIMENT2](EXP2/EXPERIMENT2.md)  <br><br>
 
   - **EXPERIMENT 3: Advanced File and Directory Operations** 
-  [EXPERIMENT3](LINUX_LAB/EXP3/EXPERIMENT3.md)  <br><br>
+  [EXPERIMENT3](EXP3/EXPERIMENT3.md)  <br><br>
 
   - **EXPERIMENT 4: Shell Programming** 
-  [EXPERIMENT4](LINUX_LAB/EXP4/EXPERIMENT4.md)  <br><br>
+  [EXPERIMENT4](EXP4/EXPERIMENT4.md)  <br><br>
 
   - **EXPERIMENT 5: Shell Programming** 
-  [EXPERIMENT5](LINUX_LAB/EXP5/EXPERIMENT5.md)  <br><br>
+  [EXPERIMENT5](EXP5/EXPERIMENT5.md)  <br><br>
 
   - **EXPERIMENT 6: Shell Programming** 
-  [EXPERIMENT6](LINUX_LAB/EXP6/EXPERIMENT6.md) <br><br>
+  [EXPERIMENT6](EXP6/EXPERIMENT6.md) <br><br>
 
   - **EXPERIMENT 7: Shell Programming** 
-  [EXPERIMENT7](LINUX_LAB/EXP7/EXPERIMENT7.md) <br><br>
+  [EXPERIMENT7](EXP7/EXPERIMENT7.md) <br><br>
 
   - **EXPERIMENT 8 : Shell Programming**   *NOT COMPLETED YET*
-  [EXPERIMENT8](LINUX_LAB/EXP8/EXPERIMENT8.md) <br><br>
+  [EXPERIMENT8](EXP8/EXPERIMENT8.md) <br><br>
 
 
 ---------------------------------------------------------------------------

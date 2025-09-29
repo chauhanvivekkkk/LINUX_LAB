@@ -85,7 +85,7 @@
 ![output6](images/806.png)
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">🧩LAB Exericeses</h1>
+## <h1 style="background-color: pink;">LAB Exericeses</h1>
 ### <h1 style="background-color: lightgreen;">TASK 1: Check File Permissions</h1>
    #### Script:
    ![script1](images/807.png)<br><br>

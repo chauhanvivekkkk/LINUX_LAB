@@ -35,16 +35,25 @@
 ## <h1 style="background-color: pink;">Process Monitoring and Resource Usage</h1>
 
  #### Commands:
- 1. `   top    ` - **live view of processes, CPU, memory**
+ 1. `   top    ` - **live view of processes, CPU, memory** <br><br>
+  #### OUTPUT:
+ ![output2.1](images/8021.png)<br><br>
+
  2. `   htop    ` - **user friendly version of *top***
+  #### OUTPUT:
+  ![putput2.2](images/8022.png)<br><br>
+
  3. `   ps aux    ` - **snapshot of all processes**
+  #### OUTPUT:
+  ![putput2.3](images/8023.png)<br><br>
+
  4. `   free -h  ` - **show memory usage**
  5. `   uptime    ` - **system load avrages**
+  #### OUTPUT:
+  ![putput2.4](images/8024.png)<br><br>
+  
 
- #### OUTPUT:
- ![output2](images/802.png)
-
----------------------------------------------------------------------------
+ ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">Process Communication</h1>
  
 - **Pipes `  |  ` - to pass output of one command to another**
@@ -54,21 +63,29 @@
 
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">Process Synchronization</h1>
-  **To prevent conflicts, processes can be synchronized**
-  - `   wait  ` - **used to pause the execution of a script until all the background processes complete.**
+ #### To prevent conflicts, processes can be synchronized
+  - `   wait  ` - **used to pause the execution of a script until all the background processes complete.** <br><br>
+   #### SCRIPT:
+   ![script1](images/8041.png)<br><br>
+   #### OUTPUT:
+   ![output4.1](images/8042.png)<br><br>
+   [Click here to view the video of execution of this script](images/wait1.mp4)<br><br>
 
-  - ` wait <PID> ` - **waits for a particular job to finish**
+  - ` wait <PID> ` - **waits for a particular job to finish**<br><br>
+   #### SCRIPT:
+   ![script2](images/8043.png)<br><br>
 
-#### OUTPUT:
-![output4](images/804.png)
+   #### OUTPUT:
+   ![output4.2](images/8044.png)<br><br>
+   [Click here to view the video of execution of this script ](images/wait2.png)<br><br>
 
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">Background Process and Job control</h1>
 
- - `   &   ` - **used to run a process in background**
- - `  jobs  ` - **shows background jobs**
- - `   fg %1   ` - **brings job 1 to foreground**
- - `   bg %1   ` - **resume job 1 in background**
+ 1. `   &   ` - **used to run a process in background**
+ 2. `  jobs  ` - **shows background jobs**
+ 3. `   fg %1   ` - **brings job 1 to foreground**
+ 4. `   bg %1   ` - **resume job 1 in background**
 
  #### OUTPUT:
  ![output5](images/805.png)
@@ -76,46 +93,68 @@
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">System Monitoring and logging</h1>
 
- - `  dmesg | less  ` - **kernel/ system messages**
- - `  journalctl  ` - **systemlogs**
- - `  last  ` - **logged-in users**
- - `  who  `  or  `  w  ` - **user currently logged-in**
+ 1. `  dmesg | less  ` - **kernel/ system messages**
+   #### OUTPUT:
+   ![output6.1](images/8061.png)<br><br>
+   ![output6.2](images/8062.png)<br><br>
 
-#### OUTPUT:
-![output6](images/806.png)
+
+ 2. `  journalctl  ` - **systemlogs**
+   #### OUTPUT:
+   ![output6.3](images/8063.png)<br><br>
+ 
+ 
+ 3. `  last  ` - **logged-in users**
+   #### OUTPUT:
+   ![output6.4](images/8064.png)<br><br>
+ 
+ 
+ 4. `  who  `  or  `  w  ` - **user currently logged-in**
+  #### OUTPUT:
+  ![output6.5](images/8065.png)
+
 
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">LAB Exericeses</h1>
 ### <h1 style="background-color: lightgreen;">TASK 1: Check File Permissions</h1>
+**Write a script that checks the file permissions of a given file and displays whether it is readable, writable, or executable by the current user.**<br><br> 
+
    #### Script:
-   ![script1](images/807.png)<br><br>
+   ![script3](images/807.png)<br><br>
   
    #### Output:
    ![output7](images/808.png)<br><br>
 
 ### <h1 style="background-color: lightgreen;">TASK 2: String Operations</h1>
+**Create a script that prompts the user to enter a string and then performs operations like string length, string concatenation, and string comparison.**<br><br>
    #### Script:
-   ![script2](images/809.png)<br><br>
+   ![script4](images/809.png)<br><br>
   
    #### Output:
    ![output8](images/810.png)<br><br>
 
 ### <h1 style="background-color: lightgreen;">TASK 3: Search for a Pattern in a file</h1>
+**Write a script that searches for a specific pattern in a given file and displays the matching lines.**<br><br>
    #### Script:
-   ![script3](images/811.png)<br><br>
+   ![script5](images/811.png)<br><br>
   
    #### Output:
    ![output9](images/812.png)<br><br>
 
 ### <h1 style="background-color: lightgreen;">TASK 4: Display System Information</h1>
+**Create a script that displays various system information like the current date and time, logged-in users, system uptime, etc.**<br><br>
    #### Script:
-   ![script4](images/813.png)<br><br>
+   ![script6](images/813.png)<br><br>
   
    #### Output:
    ![output10](images/814.png)<br><br>
 
 ---------------------------------------------------------------------------
+<<<<<<< HEAD
 ## <h1 style="background-color: pink;"> OBSERVATIONS</h1>
+=======
+## <h1 style="background-color: pink;">OBSERVATIONS</h1>
+>>>>>>> d17a6c1 (Completing and modifying experiment 8)
 
  - `kill`, `wait` and job control commands (`&`, `jobs`, `fg`, `bg`) worked as expected.
 

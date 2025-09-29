@@ -77,7 +77,7 @@
 
    #### OUTPUT:
    ![output4.2](images/8044.png)<br><br>
-   [Click here to view the video of execution of this script ]([images/wait2.mp4](https://github.com/chauhanvivekkkk/LINUX_LAB/raw/main/EXP8/images/wait2.mp4))<br><br>
+   [Click here to view the video of execution of this script ](https://github.com/chauhanvivekkkk/LINUX_LAB/raw/main/EXP8/images/wait2.mp4)<br><br>
 
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">Background Process and Job control</h1>

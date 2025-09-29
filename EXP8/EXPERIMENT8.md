@@ -69,7 +69,7 @@
    ![script1](images/8041.png)<br><br>
    #### OUTPUT:
    ![output4.1](images/8042.png)<br><br>
-   [Click here to view the video of execution of this script](images/wait1.mp4)<br><br>
+   [Click here to view the video of execution of this script](https://drive.google.com/file/d/1LOsI58G-r8eLXDoungNDWrgqMH2JQtpB/view?usp=sharing)<br><br>
 
   - ` wait <PID> ` - **waits for a particular job to finish**<br><br>
    #### SCRIPT:

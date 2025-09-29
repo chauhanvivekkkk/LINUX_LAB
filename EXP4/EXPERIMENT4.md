@@ -22,7 +22,7 @@
    ![output](images/402.png)<br><br>
 
 ---------------------------------------------------------------------------
-## <h1 style="background-color: pink;">📝TASK 2: Personalised Greeting</h1>
+## <h1 style="background-color: pink;">TASK 2: Personalised Greeting</h1>
   **Create a script that prompts the user to enter their name and then displays a personalized greeting.** <br><br>
 
 

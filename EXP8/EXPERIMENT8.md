@@ -48,7 +48,7 @@
   ![putput2.3](images/8023.png)<br><br>
 
  4. `   free -h  ` - **show memory usage**
- 5. `   uptime    ` - **system load avrages**
+ 5. `   uptime    ` - **system load averages**
   #### OUTPUT:
   ![putput2.4](images/8024.png)<br><br>
   

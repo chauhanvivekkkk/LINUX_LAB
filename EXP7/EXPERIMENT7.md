@@ -12,10 +12,10 @@
 
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">Basic Process Commands</h1>
- #### 1. `   ps   ` - shows currently running proccesses 
+ #### 1. `   ps   ` - shows currently running processes 
   ![output1](images/701.png) <br><br><br><br>
 
- #### 2. `   top   ` - shows running proccesses dynamically with their CPU and memeruy usage 
+ #### 2. `   top   ` - shows running processes dynamically with their CPU and memory usage 
   ![output2](images/702.png) <br><br><br><br>
 
  #### 3. `   pstree   ` - shows process hierarchy

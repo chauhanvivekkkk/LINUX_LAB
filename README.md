@@ -8,7 +8,7 @@ This repository will contain all my Linux lab experiments and scripts for learni
 
 ---------------------------------------------------------------------------
 
-## 🔗<h1 style="background-color: orange;"> LINKS TO EXPERIMENTS</h1>
+## <h1 style="background-color: orange;"> LINKS TO EXPERIMENTS</h1>
 
  - **EXPERIMENT 1: Installation of VirtualBox** 
   [EXPERIMENT1](EXP1/EXPEERIMENT1.md) <br><br>

@@ -15,7 +15,7 @@ To understand the structure of the Linux file system, manage file permissions an
 - The Linux file system is a structured and hierarchical way of storing and organizing files and directories.
 - Linux treats everything as part of a single directory tree starting from the root directory `/`
 - To view all files and directories in the root `/` directory along with their details such as *permissions*, *ownership*, etc.
-we can use comand
+We can use the command
 ```
 ls -l /
 ```
@@ -33,9 +33,9 @@ ls -l /
 - Categories of Users:
   - Owner
   - Group 
-  - Ohters
+  - Others
 
-- Using `ls -l` command to see the permission and ownership for a file `file1.txt`
+- Using the `ls -l` command to see the permission and ownership for a file `file1.txt`
 
  ### Output:
  ![output](images/202.png) <br><br>
@@ -43,14 +43,14 @@ ls -l /
 ---------------------------------------------------------------------------
 
 ## <h1 style="background-color: pink;"> Modifying Permissions</h1>
-  ### Using `chmod` command
-- To change the permission and making `myfile.txt` executable for the user we can use the command
+  ### Using the `chmod` command
+- To change the permission and make `myfile.txt` executable for the user, we can use the command
 ```
 chmod u+x myfile.txt
 ```
  ### Output:
  ![Output](images/203.png)<br><br>
-- We can also change permission using numeric mode 
+- We can also change permissions using numeric mode 
 ```
 chmod 744 myfile2.txt
 chmod 754 myfile2.txt
@@ -98,7 +98,7 @@ chmod 754 myfile2.txt
   ![Output](images/210.png) <br><br>
 
 ---------------------------------------------------------------------------
-### 3. `mkdir` - Make directory 
+### 3. `mkdir` - Make a directory 
  #### Syntax
   ```
   mkdir [options] directory_name
@@ -137,10 +137,10 @@ chmod 754 myfile2.txt
   ![output](images/212.png) <br><br>
 
 ---------------------------------------------------------------------------
-##  <h1 style="background-color: pink;"> 📝File Operations</h1>
+##  <h1 style="background-color: pink;">File Operations</h1>
 
  ### 1. `touch` - Creates files
-  -  The `touch` command is used to create empty files or to update timestamps of existing flies. 
+  -  The `touch` command is used to create empty files or to update timestamps of existing files. 
   #### Syntax
    ```
     touch [options] file_name
@@ -163,13 +163,13 @@ chmod 754 myfile2.txt
   ```
   cp [options] source destination
   ```
-  - **Copy a single file** - Copies the content of source file to destination file.
+  - **Copy a single file** - Copies the content of the source file to the destination file.
     `cp source_file destination_file`<br><br>
   
   - **Copy multiple files to a directory** - Copies all the files to the given destination directory at once.
     `cp source_files destination_directory_path`<br><br>
 
-  - **Copy a directory recusively** - Copy all the files and sub directories of source directory to the destination directory.
+  - **Copy a directory recursively** - Copy all the files and subdirectories of the source directory to the destination directory.
     `cp -r [source] [destination]`<br><br>
   
   - **Copy and show details** - Display each file being copied.
@@ -183,11 +183,11 @@ chmod 754 myfile2.txt
 
 ---------------------------------------------------------------------------
  ### 3. `mv` - Move and rename
-  - `mv` command is uesed to move files and directories from one place to another.
+  - `mv` command is used to move files and directories from one place to another.
   
   #### Syntax 
   ```
-   mv [options] source dstination
+   mv [options] source destination
   ```
   - **Move file to different directory**
     `mv source_file destination_directory`<br><br>
@@ -234,7 +234,7 @@ chmod 754 myfile2.txt
 ##  <h1 style="background-color: pink;">File viewing and Editing</h1>
 
  ### 1. `cat` - Used for viewing, creating and merging files
-  - The `cat` command is use to display the content of files, create new fiels or combine multiple files.
+  - The `cat` command is used to display the content of files, create new files or combine multiple files.
   
   #### Syntax
   ```
@@ -256,7 +256,7 @@ chmod 754 myfile2.txt
   - **To display all output lines with numbers**
     ` cat -n file_name` <br><br>
 
-   - **To display all non empty output lines with numbers**
+   - **To display all non-empty output lines with numbers**
     ` cat -b file_name` <br><br>
 
   #### Output:
@@ -265,7 +265,7 @@ chmod 754 myfile2.txt
 
 ---------------------------------------------------------------------------
  ### 2. `head` - Viewing the beginning of files
-  - The `head` command is used to view first few lines of a file.
+  - The `head` command is used to view the first few lines of a file.
 
   #### Syntax 
   ```
@@ -278,7 +278,7 @@ chmod 754 myfile2.txt
   - **To display the first 5 lines**
     `head -n 5 file_name`<br><br>
   
-  - **To display first 20 bytes of a file**
+  - **To display the first 20 bytes of a file**
     ` head -c 20 file_name`<br><br>
 
   #### Output:
@@ -286,7 +286,7 @@ chmod 754 myfile2.txt
 
 ---------------------------------------------------------------------------
  ### 3. `tail` - Viewing the end of files
-  - The `tail` command is used to view last few lines of a file.
+  - The `tail` command is used to view the last few lines of a file.
 
   #### Syntax
   ```
@@ -298,7 +298,7 @@ chmod 754 myfile2.txt
   - **To display the last 5 lines of a file (*default*)**
     ` tail -n 5 file_name`<br><br>
 
-  - **To display last 20 bytes of a file**
+  - **To display the last 20 bytes of a file**
     ` tail -c 20 file_name`<br><br>
   
   - **To monitor a file in real time**
@@ -311,7 +311,7 @@ chmod 754 myfile2.txt
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;"> Text editors</h1>
  ### 1. Nano
-  - NANO is a text editor that works directly from the terminal, ysefult o create and edit files.
+  - NANO is a text editor that works directly from the terminal, useful for creating and editing files.
   
   #### Output:
    ![output](images/222.png)<br><br>
@@ -319,7 +319,7 @@ chmod 754 myfile2.txt
 
 ---------------------------------------------------------------------------
  ### 2. Vim
-  - VIM is an advanced text editor with features like syntax higlighting, efficient navigation and powerful editing commands.
+  - VIM is an advanced text editor with features like syntax highlighting, efficient navigation and powerful editing commands.
 
   #### OUTPUT:
    ![output](images/224.png)<br><br>
@@ -334,9 +334,9 @@ chmod 754 myfile2.txt
 
  ### 3. `passwd` - To change user password
 
- ### 4. `sudo ` - To run commands with administrative priviliges
-  - For tasks like updating and installing packages, ediitng the system files `sudo` command is used.
-  - `sudo` grants root priviliges to the user to run commands.
+ ### 4. `sudo ` - To run commands with administrative privileges
+  -For tasks like updating and installing packages or editing system files, the `sudo` command is used
+  - `sudo` grants root privileges to the user to run commands.
   #### Syntax
    ```
     sudo command
@@ -349,7 +349,7 @@ chmod 754 myfile2.txt
 ---------------------------------------------------------------------------
   
  ## <h1 style="background-color: pink;"> System Information</h1>
-  ### 1.`uname` - To display detais about linux system
+  ### 1.`uname` - To display details about Linux system
 
    #### Syntax
    ```
@@ -383,7 +383,7 @@ chmod 754 myfile2.txt
    - **To display basic disk usage**
     `df`<br><br>
 
-   - **To display disk usage in human readable format**
+   - **To display disk usage in human human-readable format**
     `df -h`<br><br>
 
    - **To display file system type**
@@ -394,8 +394,8 @@ chmod 754 myfile2.txt
 
 ---------------------------------------------------------------------------
 
-  ### 3.`top` - shows real time information 
-   - `top` shows real time info about processes, CPU usage, memory usage and other system resources
+  ### 3.`top` - shows real-time information 
+   - `top` shows real-time info about processes, CPU usage, memory usage and other system resources
 
   ### OUTPUT:
    ![output](images/230.png)<br><br>

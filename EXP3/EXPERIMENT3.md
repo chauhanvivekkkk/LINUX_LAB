@@ -23,7 +23,7 @@
   - **Find files by exact name** 
      `find [path] -name "*file_name*"`<br><br>
 
-  - **Case -insensitive search**
+  - **Case-insensitive search**
      `find [path] -iname "*file_name*"`<br><br>
 
   - **Wildcard search**
@@ -65,7 +65,7 @@
   - **Modified more than 10 days ago**
      `find [path] -mtime +10`<br><br>
 
-  - **Accessed in last 24 hours**
+  - **Accessed in the last 24 hours**
      `find [path] -atime -1`<br><br>
   
   - **Changed in last 24 hours**
@@ -96,25 +96,25 @@
   grep [options] pattern [files{s}]
 
   ```
- - **Search for pattern in a file**
+ - **Search for a pattern in a file**
     ` grep "pattern" [filename or path]`<br><br>
  
- - **Case insensitive search for pattern in a file**
+ - **Case-insensitive search for a pattern in a file**
     ` grep -i "pattern" [filename or path]`<br><br>
 
- - **Search for pattern in multilple files**
+ - **Search for pattern in multiple files**
     ` grep "pattern" [*filename]`<br><br>   
 
- - **Search for pattern reacursively in a directory**
+ - **Search for pattern recursively in a directory**
     ` grep -r "pattern" [path]`<br><br>   
 
- - **Search for pattern in a file and show line numbers**
+ - **Search for a pattern in a file and show line numbers**
     ` grep -n "pattern" [filename or path]`<br><br>
 
  - **To count matches**
     ` grep -c "pattern" [filename or path]`<br><br>
 
- - **Show only the matchong word**
+ - **Show only the matching word**
     ` grep -o "pattern" [filename or path]`<br><br>
 
  - **Match whole word only**
@@ -123,7 +123,7 @@
  - **Show only filename(s) that match**
     ` grep -l "pattern" [filename or path]`<br><br>
 
- - **To search multiple patterns** - grep will match any line that has at least one of the pattern
+ - **To search multiple patterns** - grep will match any line that has at least one of the patterns
     ` grep -e "pattern" -e "pattern" -e "pattern" [filename or path]`<br><br>
 
  - **To highlight matches**
@@ -133,10 +133,10 @@
     ` grep -A 1 -B 1 "pattern" [filename or path]`<br><br>
     ` grep -C 2 "pattern" [filename or path]`<br><br>
 
- - **TO search for a pattern in the beginning of a line**
+ - **TO search for a pattern at the beginning of a line**
     ` grep "^pattern" [filename or path]` <br><br>
 
- - **TO search for a pattern in the end of a line**
+ - **TO search for a pattern at the end of a line**
     ` grep "$pattern" [filename or path]` <br><br>
 
  - **Extended regex**
@@ -175,10 +175,10 @@
   - **To extract `.tar` archive**
      ` tar -xf [archive_name]` <br><br>
 
-  - **To extract `.tar` archive to a specific directory**
+  - **To extract a `.tar` archive to a specific directory**
      ` tar -xf [archive_name] -C [path]` <br><br>
 
-  - **To extract `.tar.gz`compressed archive**
+  - **To extract `.tar.gz` compressed archive**
      ` tar -xzf [archive_name]` <br><br>
 
   - **To list `.tar`content without extracting archive**
@@ -190,7 +190,7 @@
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;"> File Compression and Decompression with `gzip/gunzip`</h1>
  ### 1. File Compression with `gzip` 
-  The `gzip` command is used to compress files with `.gz` extension.
+  The `gzip` command is used to compress files with the `.gz` extension.
 
   #### Syntax
    ```
@@ -212,8 +212,8 @@
    ### Output:
    ![output](images/312.png) <br><br>
  
-  ### 2. File Deompression with `gunzip` 
-  The `gunzip` command is used to decompress files with `.gz` extension.
+  ### 2. File Decompression with `gunzip` 
+  The `gunzip` command is used to decompress files with the `.gz` extension.
 
   #### Syntax
    ```
@@ -239,7 +239,7 @@
    
 ------------------------------------------------------------------------
 ## <h1 style="background-color: pink;"> Creating links with `ln`</h1>
- - The `ln` command is used to create inks between the files. <br><br>
+ - The `ln` command is used to create links between the files. <br><br>
 
   ### Syntax
    ```
@@ -247,7 +247,7 @@
 
    ```
  ### 1. Hard links 
-  - **To create hard link** 
+  - **To create a hard link** 
      `ln [target] [link_name]` <br><br>
 
   - **To view inode numbers**
@@ -264,7 +264,7 @@
 
    ```
 
-  - **To create symbolic link**
+  - **To create a symbolic link**
      ` ln -s [target] [linkname]` <br><br>
 
   - **Linking to directories**

@@ -154,7 +154,6 @@
 ## <h1 style="background-color: pink;"> OBSERVATIONS</h1>
 =======
 ## <h1 style="background-color: pink;">OBSERVATIONS</h1>
->>>>>>> d17a6c1 (Completing and modifying experiment 8)
 
  - `kill`, `wait` and job control commands (`&`, `jobs`, `fg`, `bg`) worked as expected.
 

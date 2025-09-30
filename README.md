@@ -31,7 +31,7 @@ This repository will contain all my Linux lab experiments and scripts for learni
   - **EXPERIMENT 7: Shell Programming** 
   [EXPERIMENT7](EXP7/EXPERIMENT7.md) <br><br>
 
-  - **EXPERIMENT 8 : Shell Programming**   *NOT COMPLETED YET*
+  - **EXPERIMENT 8: Shell Programming** 
   [EXPERIMENT8](EXP8/EXPERIMENT8.md) <br><br>
 
 

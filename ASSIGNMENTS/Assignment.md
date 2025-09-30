@@ -50,7 +50,7 @@
 
  #### Explanation:
   - Lines starting with + show each command before running it.
-  - The mistake: the script uses $nme instead of $name → so it's empty.
+  - The mistake: the script uses `$nme` instead of `$name` → so it's empty.
   - echo "Hello, $nme!" prints Hello, ! with nothing after comma.
   - Debug mode helps spot that the wrong variable is used.
 

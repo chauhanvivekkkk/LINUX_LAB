@@ -2,7 +2,7 @@
 
 ---------------------------------------------------------------------------
 ### <h1 style="background-color: pink;"> TASK 1</h1>
- ####  Write a function to calculate the factorial of a number usin a loop.<br><br>
+ ####  Write a function to calculate the factorial of a number using a loop.<br><br>
  #### Script:
  ![script1](images/A01.png)<br><br>
   

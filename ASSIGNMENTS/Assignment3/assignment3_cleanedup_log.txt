@@ -1,0 +1,77 @@
+Script started on 2025-10-02 19:53:32+05:30
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim task1.sh
+"task1.sh" [New] 16L, 183B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ source task1.sh
+Started background job: sleep 60
+[1]+  Running                 sleep 60 &
+Bringing job 5184 to foreground...
+sleep 60
+bash: kill: (5184) - No such process
+Job 5184 terminated.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim task2.sh
+"task2.sh" [New] 23L, 504B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ touch test.txt test1.txt test3.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim test.txt
+"test.txt" 1L, 15B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim test1.txt
+"test1.txt" 1L, 18B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim test3.txt
+"test3.txt" 1L, 16B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ source task2.sh test1.txt test.txt
+Files 'test1.txt' and 'test.txt' are DIFFERENT.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ source task2.sh test3.txt test.txt
+Files 'test3.txt' and 'test.txt' are IDENTICAL.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim task3.sh
+"task3.sh" [New] 12L, 353B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ sleep 200 &
+[1] 5246
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ sleep 100 &
+[2] 5247
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ source task3.sh
+Number of processes currently run by user 'vivekchauhan12': 100
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ kill 5246 5247
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ clear
+[1]-  Terminated              sleep 200
+[2]+  Terminated              sleep 100
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim task4.sh
+"task4.sh" [New] 16L, 363B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ source task4.sh
+^C
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ ls
+assignment3.log  task1.sh  task2.sh  task3.sh  task4.sh  test1.txt  test3.txt  test.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim task4.sh
+"task4.sh" 16L, 405B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ source task4.sh
+^C
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ ls
+assignment3.log  memory_usage.log  task1.sh  task2.sh  task3.sh  task4.sh  test1.txt  test3.txt  test.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ cat memory_usage.log
+----- Thu Oct 2 08:09:39 PM IST 2025 -----
+               total        used        free      shared  buff/cache   available
+Mem:           3.1Gi       1.5Gi       541Mi        67Mi       1.3Gi       1.6Gi
+Swap:          3.1Gi       632Ki       3.1Gi
+
+----- Thu Oct 2 08:09:44 PM IST 2025 -----
+               total        used        free      shared  buff/cache   available
+Mem:           3.1Gi       1.5Gi       541Mi        67Mi       1.3Gi       1.6Gi
+Swap:          3.1Gi       632Ki       3.1Gi
+... (more snapshots snipped) ...
+----- Thu Oct 2 08:10:29 PM IST 2025 -----
+               total        used        free      shared  buff/cache   available
+Mem:           3.1Gi       1.5Gi       540Mi        67Mi       1.3Gi       1.6Gi
+Swap:          3.1Gi       632Ki       3.1Gi
+
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ vim task5.sh
+"task5.sh" [New] 22L, 409B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ source task5.sh
+Enter filename: task5.sh
+Enter search pattern: echo
+S: command not found
+Number of lines matching 'echo' in 'task5.sh': 2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS3$ exit
+Script done on 2025-10-02 20:14:13+05:30

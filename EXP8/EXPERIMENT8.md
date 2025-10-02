@@ -29,7 +29,7 @@
 
  #### OUTPUT:
 
- ![output1](images/801.png)
+ ![output1](images/8011.png)
 
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">Process Monitoring and Resource Usage</h1>
@@ -50,7 +50,7 @@
  4. `   free -h  ` - **show memory usage**
  5. `   uptime    ` - **system load averages**
   #### OUTPUT:
-  ![putput2.4](images/8024.png)<br><br>
+  ![putput2.4](images/802.4.png)<br><br>
   
 
  ---------------------------------------------------------------------------
@@ -59,7 +59,7 @@
 - **Pipes `  |  ` - to pass output of one command to another**
 
  #### OUTPUT:
- ![output3](images/803.png)
+ ![output3](images/803.1.png)
 
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">Process Synchronization</h1>
@@ -88,7 +88,7 @@
  4. `   bg %1   ` - **resume job 1 in background**
 
  #### OUTPUT:
- ![output5](images/805.png)
+ ![output5](images/805.1.png)
 
 ---------------------------------------------------------------------------
 ## <h1 style="background-color: pink;">System Monitoring and logging</h1>
@@ -150,9 +150,6 @@
    ![output10](images/814.png)<br><br>
 
 ---------------------------------------------------------------------------
-<<<<<<< HEAD
-## <h1 style="background-color: pink;"> OBSERVATIONS</h1>
-=======
 ## <h1 style="background-color: pink;">OBSERVATIONS</h1>
 
  - `kill`, `wait` and job control commands (`&`, `jobs`, `fg`, `bg`) worked as expected.

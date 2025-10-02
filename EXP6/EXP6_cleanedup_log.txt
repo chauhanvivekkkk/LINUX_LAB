@@ -1,0 +1,127 @@
+Script started on 2025-10-02 04:56:43+05:30 
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim forloop.sh
+"forloop.sh" 14L, 129B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ bash forloop.sh
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
+1
+2
+3
+4
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim whileloop.sh
+E325: ATTENTION
+Found a swap file by the name ".whileloop.sh.swp"
+... (swap file warning snipped) ...
+"whileloop.sh" 8L, 111B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source whileloop.sh
+Count :1
+Count :2
+Count :3
+Count :4
+Count :5
+bash: /home/vivekchauhan12: Is a directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim untilloop.sh
+"untilloop.sh" 8L, 84B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source untilloop.sh
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim controlloop.sh
+"controlloop.sh" 21L, 397B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source controlloop.sh
+
+A Step 1
+D ending take
+
+
+A Step 2
+D ending take
+
+
+A Step 3
+D ending take
+
+
+A Step 4
+b before continue
+
+A Step 5
+D ending take
+
+
+A Step 6
+D ending take
+
+
+A Step 7
+D ending take
+
+
+A Step 8
+c before break
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim greet.sh
+"greet.sh" 8L, 55B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source greet.sh Vivek
+Hello Vivek
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim table.sh
+"table.sh" 11L, 142B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source table.sh
+
+ x 1 = 0
+ x 2 = 0
+... (table output snipped) ...
+ x 10 = 0
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source table.sh 17
+ 17 x 1 = 17
+ 17 x 2 = 34
+... (table output snipped) ...
+ 17 x 10 = 170
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source table.sh 3451
+ 3451 x 1 = 3451
+ 3451 x 2 = 6902
+... (table output snipped) ...
+ 3451 x 10 = 34510
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim palindrome.sh
+"palindrome.sh" 21L, 299B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source palindrome.sh
+Enter the number:
+456
+456 is not a palindrome.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source palindrome.sh
+Enter the number:
+1001
+1001 is a palindrome.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim GCD_LCM.sh
+"GCD_LCM.sh" 20L, 208B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source GCD_LCM.sh
+Enter two numbers:
+34 45 68
+GCD: 1
+LCM: 3060
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ vim sorting.sh
+"sorting.sh" 16L, 362B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ source sorting.sh
+Enter numbers separated by spaces: 45 76 24 92 82 17 20
+Ascending order:
+17
+20
+24
+45
+76
+82
+92
+Descending order:
+92
+82
+76
+45
+24
+20
+17
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6$ exit
+Script done on 2025-10-02 05:08:57+05:30

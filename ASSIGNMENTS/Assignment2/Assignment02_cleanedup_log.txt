@@ -1,0 +1,84 @@
+Script started on 2025-10-02 15:43:27+05:30 
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ vim task1.sh
+"task1.sh" 14L, 312B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ source task1.sh
+^C
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ ls
+assignment2.log  cpu_top5.log  task1.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ cat cpu_top5.log
+----- Thu Oct 2 03:44:11 PM IST 2025 -----
+    PID COMMAND         %CPU
+   4020 ps               100
+   2397 gnome-shell      3.9
+    770 snapd            3.3
+   3196 gnome-terminal-  0.4
+   2790 ibus-extension-  0.1
+
+----- Thu Oct 2 03:44:21 PM IST 2025 -----
+    PID COMMAND         %CPU
+   2397 gnome-shell      3.9
+    770 snapd            3.3
+   3196 gnome-terminal-  0.4
+   2790 ibus-extension-  0.1
+      1 systemd          0.1
+
+----- Thu Oct 2 03:44:31 PM IST 2025 -----
+    PID COMMAND         %CPU
+   2397 gnome-shell      3.8
+    770 snapd            3.3
+   3196 gnome-terminal-  0.3
+      1 systemd          0.1
+   2790 ibus-extension-  0.1
+
+----- Thu Oct 2 03:44:41 PM IST 2025 -----
+    PID COMMAND         %CPU
+   2397 gnome-shell      3.8
+    770 snapd            3.3
+   3196 gnome-terminal-  0.3
+      1 systemd          0.1
+   2790 ibus-extension-  0.1
+
+----- Thu Oct 2 03:44:51 PM IST 2025 -----
+    PID COMMAND         %CPU
+   4041 fwupd            6.7
+   2397 gnome-shell      3.8
+    770 snapd            3.3
+   3196 gnome-terminal-  0.3
+      1 systemd          0.1
+
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ vim task2.sh
+"task2.sh" [New] 14L, 249B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ sleep 100 &
+[1] 4080
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ source task2.sh
+Enter the PID of the process: 4080
+    PID    PPID S COMMAND         %MEM
+   4080    4007 S sleep            0.0
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ vim task3.sh
+"task3.sh" [New] 8L, 123B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ vim task3.sh
+"task3.sh" 8L, 170B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ crontab -e
+crontab: installing new crontab
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ pwd
+/home/vivekchauhan12/Downloads/assignments/ASS2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ source task3.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ cat datetime.log
+Thu Oct 2 03:54:32 PM IST 2025
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ vim task4.sh
+"task4.sh" [New] 22L, 350B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ source task4.sh
+Enter a number: 5
+Factorial of 5 is: 120
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ source task4.sh
+Enter a number: -4
+Error: Factorial of a negative number is not defined.
+Script done on 2025-10-02 16:03:43+05:30
+Script started on 2025-10-02 16:17:18+05:30 
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ vim task5.sh
+"task5.sh" 15L, 274B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ source task5.sh file1.txt
+Number of lines starting with a vowel in 'file1.txt': 14
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/assignments/ASS2$ exit
+Script done on 2025-10-02 16:18:02+05:30

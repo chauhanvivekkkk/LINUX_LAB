@@ -1,0 +1,193 @@
+Script started on 2025-10-02 02:25:27+05:30
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ find . -name "file3.png"
+./lab2/dir5/dir1/file3.png
+./lab2/directory2/dir1/file3.png
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ find . -iname "file.txt"
+./lab6/assign/file.txt
+./lab6/file.txt
+./file.txt
+./lab3/file.txt
+./lab3/File.txt
+./lab3/FILE.txt
+./lab3/fIle.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ find . -name "*.txt"
+./lab6/assign/file.txt
+./lab6/file.txt
+./lab7/output.txt
+./lab7/output1.txt
+./lab7/output2.txt
+./file.txt
+./lab2/dir5/dir1/merged.txt
+./lab2/dir5/dir1/test1.txt
+./lab2/dir5/dir1/file2.txt
+./lab2/dir5/dir1/file3.txt
+./lab2/dir5/dir1/test2.txt
+./lab2/dir5/dir1/newfile.txt
+./lab2/dir5/dir1/file1.txt
+./lab2/directory2/dir1/file2.txt
+./lab2/directory2/dir1/file3.txt
+./lab2/directory2/dir1/file1.txt
+./.hidden0.txt
+./LINUX_LAB/fiel1.txt
+./lab9.0/videos/file2.txt
+./lab3/file.txt
+./lab3/File.txt
+./lab3/FILE.txt
+./lab3/fIle.txt
+./file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ cd
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ find ~/Downloads/practice -type d
+/home/vivekchauhan12/Downloads/practice
+/home/vivekchauhan12/Downloads/practice/sep9_2316
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ find ~/Downloads/lab3 -type f
+/home/vivekchauhan12/Downloads/lab3/file.txt
+/home/vivekchauhan12/Downloads/lab3/File.txt
+/home/vivekchauhan12/Downloads/lab3/EXP3.log
+/home/vivekchauhan12/Downloads/lab3/FILE.txt
+/home/vivekchauhan12/Downloads/lab3/fIle.txt
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ find ~/Downloads/C_programming/lab1 -type f -name "*.c"
+/home/vivekchauhan12/Downloads/C_programming/lab1/address.c
+/home/vivekchauhan12/Downloads/C_programming/lab1/first.c
+/home/vivekchauhan12/Downloads/C_programming/lab1/sum.c
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ find ~/Downloads -size +100k
+/home/vivekchauhan12/Downloads/lab5/scrip.md
+/home/vivekchauhan12/Downloads/lab2/EXP2.log
+/home/vivekchauhan12/Downloads/lab2/exp2_clean.log
+/home/vivekchauhan12/Downloads/google-chrome-stable_current_amd64.deb
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ find ~/Downloads/C_programming/lab1 -size -10M
+/home/vivekchauhan12/Downloads/C_programming/lab1
+/home/vivekchauhan12/Downloads/C_programming/lab1/address.c
+/home/vivekchauhan12/Downloads/C_programming/lab1/add
+... (file list snipped) ...
+/home/vivekchauhan12/Downloads/C_programming/lab1/a.out
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ find ~/Downloads -mtime +10
+... (long file list snipped) ...
+/home/vivekchauhan12/Downloads/file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ find ~/Downloads -atime -1
+... (long file list snipped) ...
+/home/vivekchauhan12/Downloads/lab3/FILE.txt
+/home/vivekchauhan12/Downloads/lab3/fIle.txt
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ find ~/Downloads/C_programming/lab1 -perm /111
+/home/vivekchauhan12/Downloads/C_programming/lab1
+/home/vivekchauhan12/Downloads/C_programming/lab1/add
+/home/vivekchauhan12/Downloads/C_programming/lab1/ad1
+... (file list snipped) ...
+/home/vivekchauhan12/Downloads/C_programming/lab1/a.out
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd ~/Downloads/lab3
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ touch file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ vim file1.txt
+"file1.txt" 6L, 179B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ vim file2.txt
+"file2.txt" [New] 5L, 110B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ vim file3.txt
+"file3.txt" [New] 6L, 63B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ cd
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep "Linux" ~/Downloads/lab3/file1.txt
+Linux is powerful and flexible.
+I love working with Linux terminal
+Learning Linux is fun.
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -i "pattern" ~/Downloads/lab3/file1.txt
+grep is useful for pattern matching.
+This line contains Pattern
+Another line with PATTERN
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -i "error" ~/Downloads/lab3/*.txt
+/home/vivekchauhan12/Downloads/lab3/file2.txt:Error: Disk space is low.
+/home/vivekchauhan12/Downloads/lab3/file2.txt:Error: Memory leak in process.
+/home/vivekchauhan12/Downloads/lab3/file2.txt:error: something went wrong
+/home/vivekchauhan12/Downloads/lab3/file2.txt:ERROR: critical failure
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -r "function" ~/Downloads/
+/home/vivekchauhan12/Downloads/practice/sep9_2316/func.sh:	echo "hello from the function itself"
+/home/vivekchauhan12/Downloads/lab2/EXP2.log:  730  grep -r "function" ~/Downloads/
+... (more file references snipped) ...
+/home/vivekchauhan12/Downloads/lab3/file3.txt:function patternmatch (){
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -n "Linux" ~/Downloads/lab3/file1.txt
+1:Linux is powerful and flexible.
+2:I love working with Linux terminal
+3:Learning Linux is fun.
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -c "pattern" ~/Downloads/lab3/file1.txt
+1
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -w "pattern" ~/Downloads/lab3/file1.txt
+grep is useful for pattern matching.
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -w "error" ~/Downloads/lab3/file2.txt
+error: something went wrong
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -o "pattern" ~/Downloads/lab3/file1.txt
+pattern
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -rl "function" ~/Downloads/
+/home/vivekchauhan12/Downloads/practice/sep9_2316/func.sh
+/home/vivekchauhan12/Downloads/lab2/EXP2.log
+/home/vivekchauhan12/Downloads/lab2/exp2_clean.log
+/home/vivekchauhan12/Downloads/lab3/EXP3.log
+/home/vivekchauhan12/Downloads/lab3/file3.txt
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ vim ~/Downloads/lab3/file2.txt
+"~/Downloads/lab3/file2.txt" 5L, 138B written
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -e "error" -e "warning" ~/Downloads/lab3/file2.txt
+Error: Disk space is low.
+Error: Memory leak in process.
+error: something went wrong
+ERROR: critical failure
+warning: disk is almost full
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -A 1 -B 1 "error" ~/Downloads/lab3/file2.txt
+Error: Disk space is low.
+Error: Memory leak in process.
+error: something went wrong
+ERROR: critical failure
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep "^error" ~/Downloads/lab3/file2.txt
+error: something went wrong
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd ~/Downloads/lab3
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ vim emails.txt
+"emails.txt" [New] 5L, 84B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ vim contacts.txt
+"contacts.txt" [New] 5L, 123B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ cd
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -E "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" ~/Downloads/lab3/emails.txt
+user1@example.txt
+test.user_123@gmail.com
+hello.world@gmail.com
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ grep -E "[0-9]{3}-[0-9]{3}-[0-9]{4}" ~/Downloads/lab3/contacts.txt
+Aman: +91-845-583-3285
+Vika: +91-459-359-2458
+Shreya: +91-546-235-6932
+Mayank: +91-345-456-8347
+Himanshu: +91-682-426-5378
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd ~/Downloads/lab3
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ tar -xf arch1.tar
+tar: arch1.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ ls
+contacts.txt  file1.txt  file.txt  FILE.txt
+emails.txt    file2.txt  fIle.txt
+EXP3.log      file3.txt  File.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ tar -cvf archi1.tar file1.txt
+file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ ls
+archi1.tar    EXP3.log   file3.txt  File.txt
+contacts.txt  file1.txt  file.txt   FILE.txt
+emails.txt    file2.txt  fIle.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ tar -cvf arch2.tar file2.txt
+file2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ tar -cvf backkk.tar file2.txt
+file2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ tar -cvf backk.tar file2.txt
+file2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ mkdir filder2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ mkdir flder1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ touch notes.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ mkdir home
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ tar -xf arch1.tar
+tar: arch1.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ ls
+arch2.tar     contacts.txt  fIle.txt
+arch4.tar     emails.txt    File.txt
+archi1.tar    EXP3.log      FILE.txt
+archive1.tar  filder2       flder1
+ash2.tar      file1.txt     home
+backkk.tar    file2.txt     notes.txt
+backk.tar     file3.txt
+backups.tar   file.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab3$ exit
+Script done on 2025-10-02 03:17:49+05:30

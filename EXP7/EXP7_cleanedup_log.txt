@@ -1,0 +1,139 @@
+Script started on 2025-10-02 10:48:33+05:30 
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ cd
+vivekchauhan12@vivek-chauhan-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   3090 pts/1    00:00:00 bash
+   3096 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox:~$ sleep 7 &
+[1] 3097
+vivekchauhan12@vivek-chauhan-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   3090 pts/1    00:00:00 bash
+   3097 pts/1    00:00:00 sleep
+   3098 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox:~$ top
+top - 10:49:13 up 2 min, 1 user, load average: 0.33, 0.36, 0.16
+... (top output snipped) ...
+[1]+ Done                    sleep 7
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ pstree
+systemd─┬─ModemManager───3*[{ModemManager}]
+        ├─NetworkManager───3*[{NetworkManager}]
+        ├─VBoxDRMClient───5*[{VBoxDRMClient}]
+... (pstree output snipped) ...
+        ├─gnome-terminal-─┬─bash───script───bash───pstree
+        │                 └─5*[{gnome-terminal-}]
+... (pstree output snipped) ...
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ sleep 30 &
+[1] 3101
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ ps
+    PID TTY          TIME CMD
+   3090 pts/1    00:00:00 bash
+   3101 pts/1    00:00:00 sleep
+   3102 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ kill 3101
+[1]+ Terminated              sleep 30
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ ps
+    PID TTY          TIME CMD
+   3090 pts/1    00:00:00 bash
+   3103 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ nice -n 15 sleep 600 &
+[1] 3106
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ nice -n 15 sleep 600 &
+[2] 3107
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ nice -n 13 sleep 601 &
+[3] 3108
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ ps -o pid,comm,ni,pri -p $(pgrep -d, -f "sleep")
+    PID COMMAND          NI PRI
+   3106 sleep            15   4
+   3107 sleep            15   4
+   3108 sleep            13   6
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ nice -n 17 sleep 602 &
+[4] 3174
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ kill 3106 3107
+[1]   Terminated              nice -n 15 sleep 600
+[2]   Terminated              nice -n 15 sleep 600
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ kill 3108
+bash: kill: (3108) - No such process
+[3]-  Terminated              nice -n 13 sleep 601
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ ps
+    PID TTY          TIME CMD
+   3090 pts/1    00:00:00 bash
+   3174 pts/1    00:00:00 sleep
+   3175 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ renice 15 -p 3174
+3174 (process ID) old priority 17, new priority 15
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ at now
+warning: commands will be executed using /bin/sh
+at Thu Oct 2 10:55:00 2025
+at> sleep 60 && echo "I'm back" >> output.txt
+at> <EOT>
+job 5 at Thu Oct 2 10:55:00 2025
+[4]+ Done                    nice -n 17 sleep 602
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ cat output.txt
+I'm back
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ crontab -e
+no crontab for vivekchauhan12 - using an empty one
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ cat output 2.txt
+crontab is working every minute
+crontab is working every minute
+... (more entries snipped) ...
+crontab is working every minute
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ ps
+    PID TTY          TIME CMD
+   3090 pts/1    00:00:00 bash
+   3808 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ vim file_exist.sh
+"file_exist.sh" 18L, 320B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ ls
+countcwc.sh  factorial.sh   output1.txt  output.txt   wait2.sh
+EXP7.log     file_exist.sh  output2.txt  printnum.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ rm output1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ source file_exist.sh
+Enter filename:
+output1.txt
+File doesn't exist.
+Do you want to create it? (y/n)
+y
+File output1.txt created.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ ls
+countcwc.sh  factorial.sh   output1.txt  output.txt   wait2.sh
+EXP7.log     file_exist.sh  output2.txt  printnum.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ source file_exist.sh
+Enter filename:
+output.sh
+File doesn't exist.
+Do you want to create it? (y/n)
+n
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ source file_exist.sh
+Enter filename:
+output.txt
+File exists.
+Contents are :
+I'm back
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ vim printnum.sh
+"printnum.sh" 7L, 61B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ source printnum.sh
+1
+2
+... (numbers 1-10 snipped) ...
+10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ vim countcwc.sh
+"countcwc.sh" 19L, 279B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ chmod 744 countcwc.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ ./countcwc.sh
+Usage: ./countcwc.sh filename
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ ./countcwc.sh file_exist.sh
+Lines: 18
+Words: 50
+Characters: 320
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ ./countcwc.sh a.out
+File not found
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ vim factorial.sh
+"factorial.sh" 17L, 329B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ source factorial.sh
+ Factorial of 5 is 120
+ Factorial of 7 is 5040
+ Factorial of 10 is 3628800
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab7$ exit
+Script done on 2025-10-02 11:09:36+05:30

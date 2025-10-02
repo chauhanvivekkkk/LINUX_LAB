@@ -1,0 +1,616 @@
+Script started on 2025-10-01 22:51:58+05:30 
+vivekchauhan12@vivek-chauhan-VirtualBox: ~/Downloads/lab2$ ls cd
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd ls -l /
+total 3302492
+lrwxrwxrwx   1 root root          7 Apr 22  2024 bin -> usr/bin
+drwxr-xr-x   2 root root       4096 Feb 26  2024 bin.usr-is-merged
+... (output snipped) ...
+drwxr-xr-x  14 root root       4096 Aug 27 20:31 var
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd ~/Downloads/lab2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ touch myfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ touch myfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls -l
+total 0
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12 0 Oct  1 22:51 EXP2.log
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12 0 Oct  1 22:53 myfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ chmod u+x myfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls -l
+total 0
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12 0 Oct  1 22:51 EXP2.log
+-rwxrw-r-- 1 vivekchauhan12 vivekchauhan12 0 Oct  1 22:53 myfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ touch myfile2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls -l myfile2.txt
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12 0 Oct  1 22:54 myfile2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ chmod 744 myfile2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls -l myfile2.txt
+-rwxr--r-- 1 vivekchauhan12 vivekchauhan12 0 Oct  1 22:54 myfile2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ chmod 754 myfile2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls -l myfile2.txt
+-rwxr-xr-- 1 vivekchauhan12 vivekchauhan12 0 Oct  1 22:54 myfile2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ ls
+C_programming
+... (file list) ...
+wall.jpg
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ ls -l
+total 115984
+drwxrwxr-x 4 vivekchauhan12 vivekchauhan12      4096 Sep 12 03:09 C_programming
+... (file list) ...
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12      4096 Oct  1 17:45 lab9
+drwxrwxr-x 3 vivekchauhan12 vivekchauhan12      4096 Oct  1 16:49 lab9.0
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12      4096 Sep 22 04:33 LINUX_LAB
+... (file list) ...
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ ls -a
+.
+..
+C_programming
+... (file list including .hidden0.txt, .hidden1.png) ...
+wall.jpg
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ ls -la
+total 115992
+drwxr-xr-x 13 vivekchauhan12 vivekchauhan12      4096 Oct  1 22:47 .
+drwxr-x--- 17 vivekchauhan12 vivekchauhan12      4096 Oct  1 22:42 ..
+... (file list) ...
+-rw-rw-r--  1 vivekchauhan12 vivekchauhan12         0 Sep 13 01:42 .hidden0.txt
+-rw-rw-r--  1 vivekchauhan12 vivekchauhan12         0 Sep 13 01:42 .hidden1.png
+... (file list) ...
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ cd lab2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ pwd
+/home/vivekchauhan12/Downloads/lab2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd 
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd /home/vivekchauhan12/Downloads/lab2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads$ cd -
+/home/vivekchauhan12/Downloads/lab2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd /
+vivekchauhan12@vivek-chauhan-VirtualBox:/$ cd
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd ~/Downloads/lab2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mkdir directory1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+directory1  EXP2.log  myfile2.txt  myfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rm myfile2.txt myfile1.txt
+rm: cannot remove 'myfile1.txt': No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rm myfile1.txt myfile2.txt
+rm: cannot remove 'myfile2.txt': No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rm myfile.txt
+rm: cannot remove 'myfile.txt': No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+directory1  EXP2.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mkdir dir1 dir2 dir3
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir2  dir3  directory1  EXP2.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mkdir -p dir5/subdir/temp
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd dir5
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ ls
+subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ cd temp
+bash: cd: temp: No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ cd subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/subdir$ ls
+temp
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/subdir$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/subdir$ mkdir -m 700 subdir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/subdir$ ls -l
+total 8
+drwxrwxr-x 3 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:00 subdir
+drwx------ 2 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:02 subdir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/subdir$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir2  dir3  dir5  directory1  EXP2.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rmdir dir2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir3  dir5  directory1  EXP2.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rmdir dir3 dir4 directory1
+rmdir: failed to remove 'dir4': No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mkdir dir4
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rmdir dir3 dir4 directory1
+rmdir: failed to remove 'dir3': No such file or directory
+rmdir: failed to remove 'directory1': No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir5  EXP2.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rmdir dir5
+rmdir: failed to remove 'dir5': Directory not empty
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rmdir dir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd dir5
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ ls
+subdir  subdir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ rmdir -p subdir/temp
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ ls
+subdir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ touch file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir5  EXP2.log  file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rm file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mkdir file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rmdir file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mkdir dir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd dir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ touch file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls
+file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ touch file2.txt file3.txt file4.pdf .file5.md
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls
+file1.txt  file2.txt  file3.txt  file4.pdf
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ rm file3.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ rm file3.png
+rm: cannot remove 'file3.png': No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ touch file3.png
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls
+file1.txt  file2.txt  file3.png  file4.pdf
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls -la
+total 8
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:08 .
+drwxrwxr-x 4 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:06 ..
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12    0 Oct  1 23:07 file1.txt
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12    0 Oct  1 23:07 file2.txt
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12    0 Oct  1 23:08 file3.png
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12    0 Oct  1 23:07 file4.pdf
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12    0 Oct  1 23:07 .file5.md
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ mkdir folder2 subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir5  EXP2.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mkdir dir2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd -
+/home/vivekchauhan12/Downloads/lab2/dir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls
+file1.txt  file2.txt  file3.png  file4.pdf  folder2  subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ touch file3.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls
+file1.txt  file3.png  file4.pdf  subdir
+file2.txt  file3.txt  folder2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cp file1.txt file2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cp file4.pdf ~/Documents
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cd ~/Documents
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Documents$ ls
+file4.pdf
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Documents$ cd ~/Downloads/lab2/
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir2  dir5  EXP2.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ touch file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1/  dir2/  dir5/  EXP2.log  file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cp -r dir1 dir5
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd dir5
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ ls
+dir1  subdir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cp -rv dir1 dir2
+'dir1' -> 'dir2/dir1'
+'dir1/file1.txt' -> 'dir2/dir1/file1.txt'
+'dir1/file2.txt' -> 'dir2/dir1/file2.txt'
+'dir1/file3.png' -> 'dir2/dir1/file3.png'
+'dir1/file4.pdf' -> 'dir2/dir1/file4.pdf'
+'dir1/.file5.md' -> 'dir2/dir1/.file5.md'
+'dir1/folder2' -> 'dir2/dir1/folder2'
+'dir1/subdir' -> 'dir2/dir1/subdir'
+'dir1/file3.txt' -> 'dir2/dir1/file3.txt'
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd dir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cp -i 
+cp: missing file operand
+Try 'cp --help' for more information.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ vim file3.txt
+"file3.txt" 2L, 50B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cp -i file3.txt file1.txt
+cp: overwrite 'file1.txt'? y
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cat file1.txt
+this is file3.txt
+made for practice purposes only
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls
+file1.txt  file3.png  file4.pdf  subdir
+file2.txt  file3.txt  folder2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ mv file1.txt folder2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls folder2
+file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ mv file2.txt file3.png file3.txt ~/Documents
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cd ~/Documents
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Documents$ ls
+file2.txt  file3.png  file3.txt  file4.pdf
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Documents$ cd ~/Downloads/lab2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir2  dir5  EXP2.log  file1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mv file1.txt newfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir2  dir5  EXP2.log  newfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ mv dir2 directory2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir5  directory2  EXP2.log  newfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd dir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls
+file4.pdf  folder2  subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ rm file2.txt
+rm: cannot remove 'file2.txt': No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ touch file2.txt file3.png file3.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ ls
+file2.txt  file3.png  file3.txt  file4.pdf  folder2  subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ rm file2.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ rm file3.png file3.txt file4.pdf
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ rm -r folder2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cd..
+cd..: command not found
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir1$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir5  directory2  EXP2.log  newfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ rm -f newfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd dir2
+bash: cd: dir2: No such file or directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ ls
+dir1  dir5  directory2  EXP2.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2$ cd dir5
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ ls
+dir1  subdir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5$ cd dir1
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ ls
+file1.txt  file3.png  file4.pdf  subdir
+file2.txt  file3.txt  folder2
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ rm -i file2.txt
+rm: remove regular empty file 'file2.txt'? y
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ ls
+file1.txt  file3.png  file3.txt  file4.pdf  folder2  subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ vim file1.txt
+"file1.txt" 6L, 56B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat file1.txt
+This is file1.txt
+
+made for practice purpose only
+
+end
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat file1.txt file3.txt
+This is file1.txt
+
+made for practice purpose only
+
+end
+
+this is file3.txt 
+
+made for practice purpose only
+
+end
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ touch file3.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ ls
+file1.txt  file3.png  file3.txt  file4.pdf  folder2  subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ vim file3.txt
+"file3.txt" 5L, 56B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat file1.txt file3.txt
+This is file1.txt
+
+made for practice purpose only
+
+end
+
+this is file3.txt 
+
+made for practice purpose only
+
+end
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat > newfile.txt
+this is newfile.txt
+q ^C
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ ls
+file1.txt  file3.txt  folder2      subdir
+file3.png  file4.pdf  newfile.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat file1.txt file3.txt > merged.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat merged.txt
+This is file1.txt
+
+made for practice purpose only
+
+end
+
+this is file3.txt 
+
+made for practice purpose only
+
+end
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat -n file1.txt
+     1  This is file1.txt
+     2  
+     3  made for practice purpose only
+     4  
+     5  end
+     6  
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat -b file1.txt
+     1  This is file1.txt
+
+     2  made for practice purpose only
+
+     3  end
+
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ ls
+file1.txt  file3.png  file3.txt  file4.pdf  folder2  merged.txt  newfile.txt  subdir
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ vim file2.txt
+"test2.txt" [New] 36L, 3718B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ head file2.txt
+Linux (/ˈlɪnʊks/ LIN-uuks[16]) is a family of open source Unix-like operating systems based on the Linux kernel
+,[17] an operating system kernel first released on September 17, 1991, 
+by Linus Torvalds.[18][19][20] Linux is typically packaged 
+as a Linux distribution (distro), which includes the kernel and supporting system software and libraries—most of which are provided by 
+third parties—to create a complete operating system, designed as a clone of Unix and released under the copyleft GPL license.[21]
+Thousands of Linux distributions exist, many based directly or indirectly on other distributions;[22][23] popular Linux distributions[24][25][26]
+ include Debian, Fedora Linux, Linux Mint, Arch Linux, and Ubuntu, while commercial distributions include Red Hat Enterprise Linux, SUSE Linux 
+Enterprise, and ChromeOS.
+Linux distributions are frequently used in server platforms.[27][28] Many Linux distributions use the w
+ord "Linux" in their name, but the Free Software Foundation uses and recommends the name "GNU/Linux" to emphasize the use and importance o
+f GNU software in many distributions, causing some controversy.[
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ head -n 5 file2.txt
+Linux (/ˈlɪnʊks/ LIN-uuks[16]) is a family of open source Unix-like operating systems based on the Linux kernel
+,[17] an operating system kernel first released on September 17, 1991, by Linus Torvalds.[18][19][20]
+Linux is typically packaged 
+as a Linux distribution (distro), which includes the kernel and supporting system software and libraries—most of which are provided by 
+third parties—to create a complete operating system, designed as a clone of Unix and released under the copyleft GPL license.[21]
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ head -c 50 file3 2.txt
+Linux (/ˈlɪnʊks/ LIN-uuks[16]) is a family of o
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ tail file2.txt
+ to sophisticated workstations.[35]
+Desktop Linux distributions include a windowing system such as X11 or Wayland and a desktop environment such as GNOME, KDE Plasma or Xfce.
+Distributions
+ intended for servers may not have a graphical user interface at all or include a solution stack such as LAMP.
+The source code of Linux may be used, modified, and distributed commercially or non-commercially by anyone under the terms of its respective
+ licenses, such as the GNU General Public License (GPL).
+The license means creating novel distributions is permitted by anyone[36] 
+and is easier than it would be for an operating system such as MacOS or Microsoft Windows.[37][38][39]
+The Linux kernel, for example,
+ is licensed under the GPLv2, with an exception for system calls that allows code that calls the kernel via system calls not to be
+ licensed under the GPL.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ tail-n 5 file2.txt
+tail-n: command not found
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ tail -n 5 file2.txt
+The source code of Linux may be used, modified, and distributed commercially or non-commercially by anyone under the terms of its respective
+ licenses, such as the GNU General Public License (GPL).
+The license means creating novel distributions is permitted by anyone[36] 
+and is easier than it would be for an operating system such as MacOS or Microsoft Windows.[37][38][39]
+The Linux kernel, for example,
+ is licensed under the GPLv2, with an exception for system calls that allows code that calls the kernel via system calls not to be
+ licensed under the GPL.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ tail -c 5- file2.txt
+tail: invalid number of bytes: ‘5-’
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ tail -c 50 file2.txt
+a system calls not to be
+ licensed under the GPL.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ touch test.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ tail-f test.log
+^C
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ echo "first log entry" >> test.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ echo ""second log entry >> test.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ echo " last log entry" >> test.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ touch test1.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ nano test1.txt
+"test1.txt" 3L, 38B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat test1.txt
+this is nano editor 
+currently editing 
+test1.txt
+end
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ vim test2.txt
+"test2.txt" [New] 3L, 68B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cat test2.txt
+Hello from vim
+this is test2.txt made for practice purpose only
+end
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab2/dir5/dir1$ cd
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ whoami
+vivekchauhan12
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ who
+vivekchauhan12 seat0        2025-10-01 22:41 (login screen)
+vivekchauhan12 tty2         2025-10-01 22:41 (tty2)
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ sudo apt install --only-upgrade vim
+[sudo] password for vivekchauhan12: 
+Sorry, try again.
+[sudo] password for vivekchauhan12: 
+sudo: pt: command not found
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ sudo apt install --only-upgrade vim
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+vim is already the newest version (2:9.1.0016-1ubuntu7.9).
+The following package was automatically installed and is no longer required:
+  libllvm19
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 11 not upgraded.
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ uname
+Linux
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ uname -r
+6.14.0-32-generic
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ uname -a
+Linux vivek-chauhan-VirtualBox 6.14.0-32-generic #32~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Sep 2 14:21:04 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ uname -m
+x86_64
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ uname -o
+GNU/Linux
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ df
+Filesystem     1K-blocks      Used Available Use% Mounted on
+tmpfs             330276      1492    328784   1% /run
+/dev/sda2       25623780  13062152  11234680  54% /
+tmpfs            1651372     32964   1618408   2% /dev/shm
+tmpfs               5120         8      5112   1% /run/lock
+shared         498727932 442333828  56394104  89% /media/sf_shared
+tmpfs             330272       144    330128   1% /run/user/1000
+/dev/sr0           51898     51898         0 100% /media/vivekchauhan12/VBox_GAs_7.2.01
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           323M  1.5M  322M   1% /run
+/dev/sda2        25G   13G   11G  54% /
+tmpfs           1.6G   33M  1.6G   2% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+shared          476G  422G   54G  89% /media/sf_shared
+tmpfs           323M  144K  323M   1% /run/user/1000
+/dev/sr0         51M   51M     0 100% /media/vivekchauhan12/VBox_GAs_7.2.01
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ df -T
+Filesystem     Type    1K-blocks      Used Available Use% Mounted on
+tmpfs          tmpfs      330276      1492    328784   1% /run
+/dev/sda2      ext4     25623780  13062156  11234676  54% /
+tmpfs          tmpfs     1651372     32964   1618408   2% /dev/shm
+tmpfs          tmpfs        5120         8      5112   1% /run/lock
+shared         vboxsf  498727932 442333896  56394036  89% /media/sf_shared
+tmpfs          tmpfs      330272       144    330128   1% /run/user/1000
+/dev/sr0       iso9660     51898     51898         0 100% /media/vivekchauhan12/VBox_GAs_7.2.01
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ top
+top - 23:48:47 up 1:07, 1 user, load average: 0.24, 0.28, 0.28
+Tasks: 220 total, 1 running, 219 sleeping, 0 stopped, 0 zombie
+%Cpu(s): 4.3 us, 4.3 sy, 0.0 ni, 82.6 id, 4.3 wa, 0.0 hi, 4.3 si, 0.0 st
+MiB Mem : 3225.3 total, 629.9 free, 1430.3 used, 1388.2 buff/cache
+MiB Swap: 3225.0 total, 3225.0 free, 0.0 used. 1795.0 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  2145 vivekch+  20   0 3993460 435108 153688 S  15.4  13.2   4:49.01 gnome-shell
+  4271 vivekch+  20   0   14536   5384   3336 R   7.7   0.2   0:00.05 top
+... (more processes snipped) ...
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ history
+... (history output snipped) ...
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ history 7
+ 1472  uname -o
+ 1473  df
+ 1474  df -h
+ 1475  df -T
+ 1476  top
+ 1477  history
+ 1478  history 7
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ history | grep "df -T"
+  541  df -T
+ 1475  df -T
+ 1479  history | grep "df -T"
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ !!
+history | grep "df -T"
+  541  df -T
+ 1475  df -T
+ 1479  history | grep "df -T"
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ ls
+ash.tar      backup.tar  Documents  Music        output.txt  projects  scrip.md  Templates
+back.tar.gz  Desktop     Downloads  output2.txt  Pictures    Public    snap      Videos
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd projects
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects$ ls
+linux_practice
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects$ cd
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ pwd
+/home/vivekchauhan12
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ rm -r projects
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ mkdir -p projects/linux_practice/{scripts,documents,backup}
+vivekchauhan12@vivek-chauhan-VirtualBox: ~$ cd projects/linux_practice/scripts
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/scripts$ touch cleanup.sh readme.txt setup.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/scripts$ ls -la
+total 8
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:53 .
+drwxrwxr-x 5 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:52 ..
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12    0 Oct  1 23:53 cleanup.sh
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12    0 Oct  1 23:53 readme.txt
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12    0 Oct  1 23:53 setup.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/scripts$ cd ..
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ ls -la
+total 20
+drwxrwxr-x 5 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:52 .
+drwxrwxr-x 3 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:52 ..
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:52 backup
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:52 documents
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:53 scripts
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ cd ~/projects/linux_practice/documents
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ echo "This is a practice document" > practice.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ ls -l practice.txt
+-rw-rw-r-- 1 vivekchauhan12 vivekchauhan12 28 Oct  1 23:54 practice.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ chmod 644 practice.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ cp practice.txt ../backup/
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ cp practice.txt ../backup/practice_backup_$(date +%Y%m%d).txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ ls -la ../backup/
+total 16
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:57 .
+drwxrwxr-x 5 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:52 ..
+-rw-r--r-- 1 vivekchauhan12 vivekchauhan12   28 Oct  1 23:57 practice_backup_20251001.txt
+-rw-r--r-- 1 vivekchauhan12 vivekchauhan12   28 Oct  1 23:55 practice.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ cd ~/projects/linux_practice/documents
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ seq 1 50 > numbers.txt
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ head numbers.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ tail -n 4 numbers.txt
+47
+48
+49
+50
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ cat numbers.txt | grep "25"
+25
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ vim numbers.txt
+"numbers.txt" 50L, 141B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ cat numbers.txt
+1
+... (numbers 1-50 snipped) ...
+50
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ uname -a
+Linux vivek-chauhan-VirtualBox 6.14.0-32-generic #32~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Sep 2 14:21:04 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ df -h
+Filesystem Size Used Avail Use% Mounted on
+tmpfs 323M 1.5M 322M 1% /run
+/dev/sda2 25G 13G 11G 54% /
+tmpfs 1.6G 33M 1.6G 2% /dev/shm
+tmpfs 5.0M 8.0K 5.0M 1% /run/lock
+shared 476G 422G 54G 89% /media/sf_shared
+tmpfs 323M 148K 323M 1% /run/user/1000
+/dev/sr0 51M 51M 0 100% /media/vivekchauhan12/VBox_GAs_7.2.01
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ history 4
+ 1507  cat numbers.txt
+ 1508  uname -a 
+ 1509  df -h
+ 1510  history 4
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ who
+vivekchauhan12 seat0        2025-10-01 22:41 (login screen)
+vivekchauhan12 tty2         2025-10-01 22:41 (tty2)
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ whoami
+vivekchauhan12
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice/documents$ cd ~/projects/linux_practice
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ rm -i documents/numbers.txt
+rm: remove regular file 'documents/numbers.txt'? y
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ rmdir backup
+rmdir: failed to remove 'backup': Directory not empty
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ rm -r backup
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ ls -la
+total 16
+drwxrwxr-x 4 vivekchauhan12 vivekchauhan12 4096 Oct  2 00:01 .
+drwxrwxr-x 3 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:52 ..
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12 4096 Oct  2 00:01 documents
+drwxrwxr-x 2 vivekchauhan12 vivekchauhan12 4096 Oct  1 23:53 scripts
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ history | tail 10
+ 1512  whoami
+ 1513  cd ~/projects/linux_practice
+ 1514  rm -i documents/numbers.txt
+ 1515  rmdir backup
+ 1516  rm -r backup
+ 1517  ls -la
+ 1518  history | tail 10
+ 1519  histroy | tail -20
+ 1520  history | tail -10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ history | tail -20
+ 1502  seq 1 50 > numbers.txt
+ 1503  head numbers.txt
+ 1504  tail -n 4 numbers.txt
+ 1505  cat numbers.txt | grep "25"
+ 1506  vim numbers.txt
+ 1507  cat numbers.txt
+ 1508  uname -a 
+ 1509  df -h
+ 1510  history 4
+ 1511  who 
+ 1512  whoami
+ 1513  cd ~/projects/linux_practice
+ 1514  rm -i documents/numbers.txt
+ 1515  rmdir backup
+ 1516  rm -r backup
+ 1517  ls -la
+ 1518  history | tail 10
+ 1519  histroy | tail -20
+ 1520  history | tail -10
+ 1521  history | tail -20
+vivekchauhan12@vivek-chauhan-VirtualBox:~/projects/linux_practice$ exit
+Script done on 2025-10-02 00:03:18+05:30

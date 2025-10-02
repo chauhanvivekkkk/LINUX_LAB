@@ -1,0 +1,49 @@
+Script started on 2025-10-02 04:42:54+05:30 
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ vim primenum.sh
+"primenum.sh" 20L, 292B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash primenum.sh
+Enter a number: 
+47
+47 is a prime number.
+primenum.sh: line 20: /home/vivekchauhan12: Is a directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash primenum.sh
+Enter a number: 
+845
+845 is not a prime number.
+primenum.sh: line 20: /home/vivekchauhan12: Is a directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash primenum.sh
+Enter a number: 
+2
+2 is a prime number.
+primenum.sh: line 20: /home/vivekchauhan12: Is a directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ vim sumofdigits.sh
+"sumofdigits.sh" 14L, 181B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ chmod 744 sumofdigits.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash sumofdigits.sh
+Enter a number: 
+35735
+Sum of digits: 23
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash sumofdigits.sh
+Enter a number: 
+3
+Sum of digits: 3
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash sumofdigits.sh
+Enter a number: 
+0
+Sum of digits: 0
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ vim armstrongnum.sh
+"armstrongnum.sh" 21L, 304B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash armstrongnum.sh
+Enter a number: 
+153
+153 is an Amstrong number.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash armstrongnum.sh
+Enter a number: 
+9474
+9474 is an Amstrong number.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ bash armstrongnum.sh
+Enter a number: 
+593
+593 is not a Amstrong number.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab5$ exit
+Script done on 2025-10-02 04:49:43+05:30

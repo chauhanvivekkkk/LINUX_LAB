@@ -1,0 +1,241 @@
+Script started on 2025-10-02 11:14:57+05:30 
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 1000 &
+[1] 3921
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ kill -15 3921
+[1]+ Terminated              sleep 1000
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ps
+    PID TTY          TIME CMD
+   3894 pts/1    00:00:00 bash
+   3922 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 1000 &
+[1] 3925
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ kill -9 3925
+[1]+ Killed                  sleep 1000
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ps
+    PID TTY          TIME CMD
+   3894 pts/1    00:00:00 bash
+   3926 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 1000 &
+[1] 3927
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ kill -2 3927
+[1]+ Interrupt               sleep 1000
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 1000 &
+[1] 3937
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ kill -19 3937
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ps
+    PID TTY          TIME CMD
+   3894 pts/1    00:00:00 bash
+   3937 pts/1    00:00:00 sleep
+   3938 pts/1    00:00:00 ps
+
+[1]+ Stopped                 sleep 1000
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ top
+top - 11:20:14 up 33 min, 1 user, load average: 0.01, 0.05, 0.11
+Tasks: 211 total, 1 running, 209 sleeping, 1 stopped, 0 zombie
+... (top output snipped) ...
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.4  23428 14340 ?        Ss   10:46   0:03 /sbin/init splash
+... (ps aux output snipped) ...
+vivekch+    3984 66.6  0.1  13616  4496 pts/1    R+   11:20   0:00 ps aux
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          3.1Gi       1.1Gi       124Mi        35Mi       2.2Gi       2.1Gi
+Swap:         3.1Gi          0B       3.1Gi
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ uptime
+ 11:21:22 up 34 min,  1 user,  load average: 0.04, 0.05, 0.10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ps aux | grep bash
+vivekch+    2944  0.0  0.1  11156  5088 pts/0    Ss   10:47   0:00 bash
+vivekch+    3894  0.0  0.1  11284  5460 pts/1    Ss   11:14   0:00 bash -i
+vivekch+    4015  0.0  0.0   9144  2252 pts/1    S+   11:23   0:00 grep --color=auto bash
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ vim wait1.sh
+"wait1.sh" 23L, 358B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ source wait1.sh
+ Starting processes
+bash: wait: warning: job 1[3937] stopped
+[2]-  Done                    nice -n 4 sleep 5
+bash: wait: warning: job 1[3937] stopped
+ sleep 5 is completed with PID = 4046 
+bash: wait: warning: job 1[3937] stopped
+[2]-  Done                    nice -n 6 sleep 3
+bash: wait: warning: job 1[3937] stopped
+ sleep 3 is completed with PID = 4047 
+bash: wait: warning: job 1[3937] stopped
+[2]-  Done                    nice -n 7 sleep 7
+bash: wait: warning: job 1[3937] stopped
+ sleep 7 is completed with PID = 4048 
+ All the processes are completed 
+bash: /home/vivekchauhan12: Is a directory
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ps
+    PID TTY          TIME CMD
+   3894 pts/1    00:00:00 bash
+   3937 pts/1    00:00:00 sleep
+   4050 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ kill 3937
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ps
+    PID TTY          TIME CMD
+   3894 pts/1    00:00:00 bash
+   3937 pts/1    00:00:00 sleep
+   4053 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ kill -19 3937
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ps
+    PID TTY          TIME CMD
+   3894 pts/1    00:00:00 bash
+   3937 pts/1    00:00:00 sleep
+   4054 pts/1    00:00:00 ps
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ vim wait2.sh
+"wait2.sh" 23L, 385B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ source wait2.sh
+Starting processes
+Started sleep 7 with PID = 4067
+Started sleep 3 with PID = 4068
+Started sleep 10 with PID = 4069
+[3]   Done                    nice -n 6 sleep 3
+Process with PID 4068 completed
+Prcesses with PIDs 4067 and 4069 are still runnung in the background
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+[2]   Done                    nice -n 4 sleep 7
+[4]-  Done                    nice -n 7 sleep 10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 10 &
+[2] 4077
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ jobs
+[1]+  Stopped                 sleep 1000
+[2]-  Running                 sleep 10 &
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ jobs
+[1]+  Stopped                 sleep 1000
+[2]-  Done                    sleep 10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 10 &
+[2] 4080
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ fg %
+sleep 1000
+Terminated
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+[2]+  Done                    sleep 10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 10 &
+[1] 4094
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ jobs
+[1]+  Running                 sleep 10 &
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ jobs
+[1]+  Done                    sleep 10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 10 &
+[1] 4096
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ fg %1
+sleep 10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ jobs
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sleep 10
+^Z
+[1]+  Stopped                 sleep 10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ bg %1
+[1]+ sleep 10 &
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ jobs
+[1]+  Done                    sleep 10
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ sudo dmesg | less
+[sudo] password for vivekchauhan12: 
+... (dmesg output snipped) ...
+(END)
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ journalctl
+... (journalctl output snipped) ...
+lines 1-37
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ last -n 3
+vivekcha tty2         tty2             Thu Oct 2 10:46   still logged in
+vivekcha seat0        login screen     Thu Oct 2 10:46   still logged in
+reboot   system boot  6.14.0-32-generi Thu Oct 2 10:46   still running
+
+wtmp begins Wed Aug 27 20:31:20 2025
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ last -n 5 reboot
+reboot   system boot  6.14.0-32-generi Thu Oct 2 10:46   still running
+reboot   system boot  6.14.0-32-generi Thu Oct 2 04:29   still running
+reboot   system boot  6.14.0-32-generi Thu Oct 2 01:49   still running
+reboot   system boot  6.14.0-32-generi Thu Oct 2 00:27   still running
+reboot   system boot  6.14.0-32-generi Wed Oct 1 22:41   still running
+
+wtmp begins Wed Aug 27 20:31:20 2025
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ who
+vivekchauhan12 seat0        2025-10-02 10:46 (login screen)
+vivekchauhan12 tty2         2025-10-02 10:46 (tty2)
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ w
+ 11:41:11 up 54 min,  1 user,  load average: 0.25, 0.15, 0.10
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+vivekcha tty2     -                10:46   54:40   0.03s  0.03s /usr/libexec/gnome-session-binary --session=ubuntu
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ vim check_permm.sh
+"check_permm.sh" 13L, 252B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ source check_permm.sh
+Enter filename:
+wait1.sh
+File is readable
+File is writable
+File is executable
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ source check_permm.sh
+Enter filename:
+wait.sh
+File does not exist.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ vim stropr.sh
+"stropr.sh" 22L, 375B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ source stropr.sh
+Enter first string:
+This is lab8
+Enter second string:
+of LINUX
+Length of first string: 12
+Length of second string: 8
+Concatenated string: This is lab8of LINUX
+Strings are not equal
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ source stropr.sh
+Enter first string:
+apple
+Enter second string:
+apple
+Length of first string: 5
+Length of second string: 5
+Concatenated string: appleapple
+Strings are equal
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ vim pattern_search.sh
+"pattern_search.sh" 14L, 207B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ source pattern_search.sh
+Enter filename:
+wait1.sh
+Enter pattern to search:
+echo
+Matching lines:
+echo " Starting processes"
+echo " sleep 5 is completed with PID = $PID1 "
+echo " sleep 3 is completed with PID = $PID2 "
+echo " sleep 7 is completed with PID = $PID3 "
+echo " All the processes are completed "
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ vim sys_info.sh
+"sys_info.sh" 11L, 217B written
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ source sys_info.sh
+System Information:
+-------------------
+Date and Time: Thu Oct 2 11:47:46 AM IST 2025
+Logged in users: vivekchauhan12 seat0        2025-10-02 10:46 (login screen)
+vivekchauhan12 tty2         2025-10-02 10:46 (tty2)
+System Uptime: up 1 hour, 1 minute
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           3.1Gi       1.1Gi        77Mi        39Mi       2.2Gi       2.1Gi
+Swap:          3.1Gi          0B       3.1Gi
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           323M  1.5M  322M   1% /run
+/dev/sda2        25G   14G   11G  57% /
+tmpfs           1.6G     0  1.6G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+Downloads       476G  423G   53G  89% /media/sf_Downloads
+shared          476G  423G   53G  89% /media/sf_shared
+tmpfs           323M  128K  323M   1% /run/user/1000
+/dev/sr0         51M   51M     0 100% /media/vivekchauhan12/VBox_GAs_7.2.01
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ls
+check_permm.sh  EXP8.log  pattern_search.sh  stropr.sh  sys_info.sh  wait1.sh  wait2.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ col -b < EXP8.log > exp8_clean.log
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ ls
+check_permm.sh  exp8_clean.log  EXP8.log  pattern_search.sh  stropr.sh  sys_info.sh  wait1.sh  wait2.sh
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab8$ exit
+Script done on 2025-10-02 11:49:50+05:30

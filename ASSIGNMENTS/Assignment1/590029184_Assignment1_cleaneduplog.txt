@@ -1,0 +1,119 @@
+Script started on 2025-10-02 21:34:28+05:30
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ vim factorial.sh
+"factorial.sh" 19L, 168B written
+
+#!/bin/bash
+
+echo "Enter a number:"
+read num
+
+fact=1
+i=1
+
+while [ $i -le $num ]
+do
+  fact=$((fact * i))
+  i=$((i + 1))
+done
+
+echo "Factorial of $num is: $fact"
+
+#end
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ source factorial.sh
+Enter a number:
+7
+Factorial of 7 is: 5040
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ vim count_words.sh
+"count_words.sh" 18L, 298B written
+
+#!/bin/bash
+
+echo "Enter the filename:"
+read filename
+
+if [ -f "$filename" ]
+then
+    echo "Enter the word to search:"
+    read word
+    count=$(grep "$word" "$filename" | wc -l)
+    echo "The word '$word' appears $count times (line matches) in '$$filename'."
+else
+    echo "File not found."
+fi
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ source count_words.sh
+Enter the filename:
+file.txt
+Enter the word to search:
+apple
+The word 'apple' appears 3 times (line matches) in 'file.txt'.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ vim fibonacci.sh
+"fibonacci.sh" 19L, 209B written
+
+#!/bin/bash
+
+echo "Enter the number of Fibonacci terms:"
+read n
+
+a=0
+b=1
+
+echo "The first $n Fibonacci numbers are:"
+
+for (( i=0; i<n; i++ ))
+do
+    echo -n "$a "
+    sum=$((a + b))
+    a=$b
+    b=$sum
+done
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ source fibonacci.sh
+Enter the number of Fibonacci terms:
+6
+The first 6 Fibonacci numbers are:
+0 1 1 2 3 5 
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ source fibonacci.sh
+Enter the number of Fibonacci terms:
+6
+The first 6 Fibonacci numbers are:
+0 1 1 2 3 5 
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ clear
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ vim email_validator.sh
+"email_validator.sh" 14L, 205B written
+
+#!/bin/bash
+
+echo "Enter an email address:"
+read email
+
+if [[ "$email" =~ ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$ ]]
+then
+    echo "Valid email address."
+else
+    echo "Invalid email address."
+fi
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ source email_validator.sh
+Enter an email address:
+chauhanvivek12203@gmail.com
+Valid email address.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ source email_validator.sh
+Enter an email address:
+vivek$12293@gmial.com
+Invalid email address.
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ vim debug.sh
+"debug.sh" 9L, 150B written
+
+#!/bin/bash
+
+echo "Enter your name:"
+read name
+
+# Intentional mistake: trying to use undefined variable 'nme' instead of 'name'
+echo "Hello, $nme!"
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ bash -x debug.sh
++ echo 'Enter your name:'
+Enter your name:
++ read name
+^C
+vivekchauhan12@vivek-chauhan-VirtualBox:~/Downloads/lab6/assign$ exit
+Script done on 2025-10-02 21:42:37+05:30

@@ -15,8 +15,8 @@ This repository will contain all my Linux lab experiments and assignments for le
   [EXPERIMENT1](EXP1/590029184_Exp1_Report.md) <br><br>
 
  - **EXPERIMENT 2: Linux File Systems, Permissions and Commands** 
-  [EXPERIMENT2](EXP2/590029184_Exp2_Report.md)
-  [RAW-SCRIPT-LOG](EXP2/590029184_Exp2_Scriptlog.log)
+  [EXPERIMENT2](EXP2/590029184_Exp2_Report.md)&nbsp;&nbsp;
+  [RAW-SCRIPT-LOG](EXP2/590029184_Exp2_Scriptlog.log)&nbsp;&nbsp;
   [CLEAN-SCRIPT-LOG](EXP2/590029184_Exp2_cleaneduplog.txt)<br><br>
 
   - **EXPERIMENT 3: Advanced File and Directory Operations** 

@@ -25,9 +25,7 @@ This repository will contain all my Linux lab experiments and assignments for le
   [CLEAN-SCRIPT-LOG](EXP3/590029184_Exp3_cleaneduplog.txt)<br><br>
 
   - **EXPERIMENT 4: Shell Programming** 
-  [EXPERIMENT4](EXP4/590029184_Exp4_Report.md)  
-  [RAW-SCRIPT-LOG](EXP4/590029184_Exp4_Scriptlog.log)
-  [CLEAN-SCRIPT-LOG](EXP4/590029184_Exp4_cleaneduplog.txt)<br><br>
+  [EXPERIMENT4](EXP4/590029184_Exp4_Report.md)   [RAW-SCRIPT-LOG](EXP4/590029184_Exp4_Scriptlog.log)     [CLEAN-SCRIPT-LOG](EXP4/590029184_Exp4_cleaneduplog.txt)<br><br>
   
   - **EXPERIMENT 5: Shell Programming** 
   [EXPERIMENT5](EXP5/590029184_Exp5_Report.md) 

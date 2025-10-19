@@ -1,0 +1,21 @@
+User: vivekchauhan12
+Date: Tue Oct 14 11:22:01 PM IST 2025
+Uptime:
+ 23:22:01 up 23 min,  1 user,  load average: 0.18, 0.12, 0.11
+Top 5 CPU processes:
+    PID COMMAND         %MEM %CPU
+   3595 ps               0.1  400
+   3594 tracker-extract  0.9  300
+   2159 gnome-shell     12.0  2.5
+   3408 gnome-terminal-  1.6  0.3
+    756 snapd            1.1  0.1
+Disk usage:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           323M  1.5M  322M   1% /run
+/dev/sda2        25G   14G  9.7G  59% /
+tmpfs           1.6G     0  1.6G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+Downloads       476G  426G   51G  90% /media/sf_Downloads
+shared          476G  426G   51G  90% /media/sf_shared
+tmpfs           323M  128K  323M   1% /run/user/1000
+/dev/sr0         51M   51M     0 100% /media/vivekchauhan12/VBox_GAs_7.2.02
